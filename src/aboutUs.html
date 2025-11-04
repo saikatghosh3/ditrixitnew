@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- feature section link start  -->
+  <!-- SwiperJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- feature section link end  -->
+
+    <style>
+                /* featured section css start  */
+       
+      .gradient-bg {
+        background: linear-gradient(135deg, #111827 0%, #1e293b 100%);
+      }
+
+      .swiper-slide {
+        transition: transform 0.3s ease;
+      }
+      .swiper-slide:hover {
+        transform: translateY(-8px);
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3rem;
+        height: 3rem;
+        border-radius: 9999px;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+      }
+
+      .swiper-button-next:hover,
+      .swiper-button-prev:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .swiper-pagination-bullet {
+        background-color: #fff;
+        opacity: 0.7;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #ef4444;
+        opacity: 1;
+      }
+    
+        /* featured section css end  */
+
+    </style>
+
+</head>
+<body>
+<!-- navbar start  -->
+<!-- Top Info Bar -->
+<div class="hidden lg:block w-full bg-white border-b text-sm">
+  <div class="max-w-11/12 mx-auto flex justify-between items-center px-6 py-2">
+    <div class="flex flex-wrap items-center gap-6 text-gray-700">
+      <div class="flex items-center gap-2">
+        <i class="bi bi-geo-alt text-red-600"></i>
+        <span>1901 Thornridge Cir. Shiloh, Hawaii 81063</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <i class="bi bi-clock text-red-600"></i>
+        <span>Mon - Fri: 09.00am - 10.00pm</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <i class="bi bi-envelope text-red-600"></i>
+        <span>info_ourmail@maxnet.com</span>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <div class="flex items-center gap-1">
+        <a href="#" class="bg-red-600 text-white px-2 py-1 rounded-sm"><i class="bi bi-x"></i></a>
+        <a href="#" class="bg-red-600 text-white px-2 py-1 rounded-sm"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="bg-red-600 text-white px-2 py-1 rounded-sm"><i class="bi bi-pinterest"></i></a>
+        <a href="#" class="bg-red-600 text-white px-2 py-1 rounded-sm"><i class="bi bi-instagram"></i></a>
+      </div>
+      <a href="TermsAndCondition.html" class="text-gray-600 hover:text-red-600">Privacy & Policy</a>
+      <a href="#" class="text-gray-600 hover:text-red-600">FAQ’S</a>
+      <a href="#" class="text-gray-600 hover:text-red-600">Testimonials</a>
+    </div>
+  </div>
+</div>
+
+<!-- Main Navbar -->
+<nav id="mainNav" class="w-full bg-white shadow-sm transition-all duration-500 z-50">
+  <div class="max-w-11/12 mx-auto flex justify-between items-center px-6 md:px-6 h-20">
+
+    <!--  Logo -->
+    
+    <div class="bg-black flex items-center px-4 py-2 -ml-8">
+  <a href="homePage.html">
+    <img 
+      src="../assets/logo.png" 
+      alt="StarNet company logo" 
+      class="h-16 object-contain cursor-pointer"
+    >
+  </a>
+</div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex items-center gap-8 font-medium ">
+      <li class="relative group">
+        <a href="aboutUs.html" class="nav-link">About Us+</a>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+      </li>
+
+<li class="relative group">
+  <a href="#" class="nav-link flex items-center gap-1">
+    Services +
+  </a>
+  <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+
+  <ul
+    class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-lg py-2 w-64 text-gray-700 z-50"
+  >
+    <li>
+      <a
+        href="serviceDetails.html#custom-software"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        Custom Software Development
+      </a>
+    </li>
+    <li>
+      <a
+        href="serviceDetails.html#web-mobile"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        Web and Mobile App Development
+      </a>
+    </li>
+    <li>
+      <a
+        href="serviceDetails.html#ecommerce-erp"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        E-commerce and ERP Solution
+      </a>
+    </li>
+    <li>
+      <a
+        href="serviceDetails.html#cloud-it"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        Cloud Computing & IT Infrastructure
+      </a>
+    </li>
+    <li>
+      <a
+        href="serviceDetails.html#digital-marketing"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        Digital Marketing & Branding
+      </a>
+    </li>
+    <li>
+      <a
+        href="serviceDetails.html#ai-solutions"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        AI-powered Solutions
+      </a>
+    </li>
+    <li>
+      <a
+        href="serviceDetails.html#cybersecurity"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        Cybersecurity & Data Protection
+      </a>
+    </li>
+    <li>
+      <a
+        href="serviceDetails.html#business-consultancy"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        Business Consultancy & Strategy
+      </a>
+    </li>
+  </ul>
+</li>
+
+
+      <li class="relative group">
+        <a href="newsGrid.html" class="nav-link inline-block relative px-2 py-1">
+          Blogs +
+          <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </li>
+
+      <li class="relative group">
+        <a href="contactUs.html" class="nav-link inline-block relative px-2 py-1">
+          Contact +
+          <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Right Side Icons -->
+    <div class="flex items-center gap-4">
+      <div class="hidden md:flex items-center bg-gray-100 rounded-full px-4 py-1">
+        <i class="bi bi-headphones text-red-600 text-xl mr-2"></i>
+        <div>
+          <p class="text-xs text-gray-500 leading-none">Call Us Now</p>
+          <p class="text-sm font-semibold text-gray-800">+36 55 540 069</p>
+        </div>
+      </div>
+
+      <i class="bi bi-search text-xl text-gray-700 hover:text-red-600 cursor-pointer"></i>
+
+      <div class="relative cursor-pointer">
+        <i class="bi bi-cart2 text-xl text-gray-700 hover:text-red-600"></i>
+        <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-1 rounded-full">0</span>
+      </div>
+
+      <!-- Hamburger -->
+      <button id="menu-btn" class="block md:hidden  text-2xl text-gray-700 hover:text-red-600">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </div>
+
+  
+
+
+ <!-- Mobile Menu -->
+<div
+  id="mobile-menu"
+  class="fixed inset-0 z-50 hidden md:hidden bg-black bg-opacity-95 overflow-y-auto"
+>
+  <div class="flex flex-col text-white font-medium min-h-screen">
+
+    <!-- Top: Close Button and Logo -->
+    <div class="flex items-center justify-between px-6 py-4 border-b border-gray-700">
+      <!-- Logo -->
+      <a href="homePage.html">
+        <img src="../assets/logo.png" alt="Company Logo" class="h-16 object-contain" />
+      </a>
+      <!-- Close Button -->
+      <button id="mobile-menu-close" class="text-white text-3xl hover:text-red-500">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="flex flex-col w-full text-white font-medium border-b border-gray-700">
+      <li class="px-6 py-3 border-b border-gray-700"><a href="aboutUs.html">About Us</a></li>
+
+      <!-- Services Dropdown -->
+      <li class="px-6 py-3 border-b border-gray-700 relative">
+        <button id="services-toggle" class="w-full text-left flex items-center justify-between">
+          Services <i class="bi bi-plus-lg"></i>
+        </button>
+        <ul id="services-list" class="hidden mt-2 ml-4 text-sm space-y-1">
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">Custom Software Development</a></li>
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">Web and Mobile App Development</a></li>
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">E-commerce and ERP Solution</a></li>
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">Cloud Computing & IT Infrastructure</a></li>
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">Digital Marketing & Branding</a></li>
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">AI-powered Solutions</a></li>
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">Cybersecurity & Data Protection</a></li>
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">Business Consultancy & Strategy</a></li>
+        </ul>
+      </li>
+
+      <li class="px-6 py-3 border-b border-gray-700"><a href="newsGrid.html">Blogs</a></li>
+      <li class="px-6 py-3 border-b border-gray-700"><a href="contactUs.html">Contact</a></li>
+    </ul>
+
+    <!-- Contact Info -->
+    <div class="flex flex-col space-y-4 text-white px-6 py-4">
+      <!-- Phone -->
+      <div class="flex items-center gap-2">
+        <i class="bi bi-telephone-fill text-red-500"></i>
+        <span>+88012345678</span>
+      </div>
+
+      <!-- Email -->
+      <div class="flex items-start gap-2">
+        <i class="bi bi-envelope-fill text-red-500 mt-1"></i>
+        <div class="flex flex-col leading-tight">
+          <span>Send Mail</span>
+          <span class="text-gray-400 text-sm">help@company.com</span>
+        </div>
+      </div>
+
+      <!-- Timing -->
+      <div class="flex items-start gap-2">
+        <i class="bi bi-clock-fill text-red-500 mt-1"></i>
+        <div class="flex flex-col leading-tight">
+          <span>Timing</span>
+          <span class="text-gray-400 text-sm">Mon–Sat: 8:00 – 6:30</span>
+          <span class="text-gray-400 text-sm">Sunday – Closed</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="flex gap-4 text-xl px-6 py-4">
+      <a href="#" class="hover:text-red-500"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="hover:text-red-500"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="hover:text-red-500"><i class="bi bi-pinterest"></i></a>
+      <a href="#" class="hover:text-red-500"><i class="bi bi-instagram"></i></a>
+    </div>
+
+  </div>
+</div>
+
+</nav>
+
+
+    <!-- navbar end  -->
+  
+
+
+
+  <!-- Hero section start -->
+  
+  <section class="relative h-[60vh] bg-cover bg-center flex items-center justify-center" style="background-image: url('/assets/background/page-title.jpg');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative text-center text-white">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">
+    About Us
+   </h1>
+      <p class="text-sm"><a href="#" class="text-red-500 hover:underline">Home</a> /About</p>
+    </div>
+  </section>
+
+<!-- Hero section end  -->
+
+<!-- who we are section start -->
+ 
+<section class="w-11/12 mx-auto py-16 grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
+  <!-- LEFT SIDE IMAGES -->
+  <div class="relative">
+    <!-- Main Image -->
+    <img src="../assets/resource/about-3.jpg" alt="Family using internet" class="rounded-lg object-cover w-[450px] ml-5">
+
+    <!-- Red Label -->
+    <div class="absolute top-8 left-5 bg-red-600 text-white px-6 py-4 rounded-md shadow-lg flex items-center gap-3">
+      <i class="bi bi-wifi text-2xl"></i>
+      <div>
+        <p class="font-semibold leading-tight">Experience<br>Best Internet</p>
+      </div>
+    </div>
+
+    <!-- Overlay Image -->
+    <div class="absolute bottom-[7rem]  left-[23rem] border-8 border-white rounded-lg shadow-lg">
+      <img src="../assets/resource/about-4.jpg" alt="People watching TV" class="rounded-lg object-cover">
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE CONTENT -->
+  <div class="space-y-6">
+    <p class="text-gray-500 uppercase tracking-wider font-semibold flex items-center gap-2">
+      <span class="w-1.5 h-6 bg-red-600 inline-block"></span> Who We Are
+    </p>
+
+    <h2 class="text-4xl font-bold leading-tight">
+      We are best For secure <br>
+      <span class="text-black">Business Internet Service</span>
+    </h2>
+
+    <div class="flex items-start gap-3">
+      <div class="text-red-600 text-2xl">
+        <i class="bi bi-router-fill"></i>
+      </div>
+      <p class="text-gray-700 leading-relaxed">
+        Get connected with <span class="text-orange-500 font-semibold">DTRIX ITHUB</span> that can provide
+        your every technology need to connect the world.
+      </p>
+    </div>
+
+    <p class="text-gray-600 leading-relaxed">
+       DTRIX ITHU leading IT solutions company committed to helping businesses and organizations 
+achieve digital transformation through innovative, reliable, and result-driven technology solutions.
+ With a team of skilled developers, designers, and IT experts, we specialize in delivering custom software, 
+responsive websites, mobile apps, payment integration, and complete IT infrastructure solutions. Whether 
+you are a startup, SME, or enterprise, we provide the tools and expertise to simplify operations, boost 
+productivity, and accelerate growth
+    </p>
+
+    <button class="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow-md transition-all duration-300">
+      Get Started Now <i class="bi bi-arrow-right ml-2"></i>
+    </button>
+  </div>
+</section>
+
+<!-- who we are section  end -->
+
+
+<!-- Mission & Vision Section Start -->
+<section class="bg-gray-50 py-16 px-6 md:px-12 lg:px-20">
+  <div class="max-w-7xl mx-auto space-y-20">
+    <!-- Vision -->
+    <div class="flex flex-col lg:flex-row items-center gap-10">
+      <!-- Left: Image -->
+      <div class="flex-shrink-0">
+        <img
+          src="../assets/background/1.jpg"
+          alt="Vision"
+          class="w-[400px] h-[280px] md:w-[450px] md:h-[320px] lg:w-[500px] lg:h-[350px] object-cover rounded-xl shadow-md"
+        />
+      </div>
+
+      <!-- Right: Text -->
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold text-red-600 mb-4">Vision</h2>
+        <p class="text-gray-700 leading-relaxed text-base md:text-lg">
+          To become Bangladesh’s premier IT solutions provider, recognized for delivering
+          innovative, secure, and scalable technologies that empower businesses, startups, and
+          educational institutions. DTRIX IT Hub envisions a digitally advanced Bangladesh where
+          businesses thrive, students access global opportunities, and technology drives sustainable
+          growth. Through excellence in software development, cloud solutions, AI-powered systems,
+          and cybersecurity, we aim to transform digital experiences across all sectors, contributing
+          to the national goal of <span class="font-semibold text-red-600">Smart Bangladesh 2030</span>.
+        </p>
+      </div>
+    </div>
+
+    <!-- Mission -->
+    <div class="flex flex-col-reverse lg:flex-row items-center gap-10">
+      <!-- Left: Text -->
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold text-red-600 mb-4">Mission</h2>
+        <p class="text-gray-700 leading-relaxed text-base md:text-lg">
+          To deliver world-class IT solutions and innovative technologies that empower businesses,
+          startups, and educational institutions globally. DTRIX IT Hub strives to provide custom
+          software, AI-driven systems, cybersecurity, cloud solutions, and digital transformation
+          strategies that enhance operational efficiency and drive sustainable growth. We aim to
+          support enterprises and startups worldwide in achieving competitive advantage, connecting
+          students and businesses to international opportunities, and contributing to a digitally
+          advanced global economy through excellence, innovation, and reliable IT services.
+        </p>
+      </div>
+
+      <!-- Right: Image -->
+      <div class="flex-shrink-0">
+        <img
+          src="../assets/background/page-title.jpg"
+          alt="Mission"
+          class="w-[400px] h-[280px] md:w-[450px] md:h-[320px] lg:w-[500px] lg:h-[350px] object-cover rounded-xl shadow-md"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Mission & Vision Section End -->
+
+
+
+
+
+<!-- empty div start  -->
+ <div class="w-full h-48"></div>
+
+<!-- empty div end  -->
+
+
+<!-- feature  section start  -->
+
+<section
+      class="relative gradient-bg py-32 md:py-40 overflow-visible bg-cover bg-center"
+      style="background-image: url('../assets/background/2.jpg');"
+    >
+      <!-- Red Banner  -->
+      
+    <section
+  class="absolute -top-[6rem] left-1/2 transform -translate-x-1/2 w-11/12 md:w-2/3 lg:w-1/2 rounded-lg shadow-2xl z-20 bg-white py-10"
+>
+  <div class="flex flex-col md:flex-row items-center justify-around text-center">
+    
+  <!-- Item 1 -->
+<div class="text-center">
+  <div class="flex justify-center items-center gap-2">
+    <i class="bi bi-router text-red-600 text-4xl"></i>
+    <h3 class="text-3xl md:text-4xl font-bold text-gray-700">
+      <span class="counter" data-target="98">0</span>%+
+    </h3>
+  </div>
+  <p class="text-gray-600 text-sm mt-1 ">Uptime Rate</p>
+</div>
+   
+   <!-- Item 2 -->
+    <div class="text-center mt-6 md:mt-0">
+      <div class="flex justify-center items-center gap-2">
+        <i class="bi bi-globe2 text-red-600 text-4xl"></i>
+        <h3 class="text-3xl md:text-4xl font-bold text-gray-700">
+          <span class="counter" data-target="100">0</span>+
+        </h3>
+      </div>
+      <p class="text-gray-600 text-sm mt-1">Corporate Clients</p>
+    </div>
+
+
+      <!-- Item 3 -->
+    <div class="text-center mt-6 md:mt-0">
+      <div class="flex justify-center items-center gap-2">
+        <i class="bi bi-laptop text-red-600 text-4xl"></i>
+        <h3 class="text-3xl md:text-4xl font-bold text-gray-700">
+          <span class="counter" data-target="67">0</span>+
+        </h3>
+      </div>
+      <p class="text-gray-600 text-sm mt-1">Expert Employees</p>
+    </div>
+
+  </div>
+</section>
+
+      <!-- Section Title -->
+      <div class="text-center mt-24 md:mt-28 mb-10">
+        <h3 class="text-red-400 uppercase tracking-widest text-sm mb-2">
+          Featured Movies
+        </h3>
+        <h2
+          class="text-white text-2xl md:text-3xl font-semibold leading-snug"
+        >
+          Featured shows & movies <br />
+          without buffering
+        </h2>
+      </div>
+
+      <!-- Swiper Slider -->
+      <div class="swiper featuredSwiper max-w-6xl mx-auto px-4 relative z-10">
+        <div class="swiper-wrapper pb-12">
+          <!-- Slide Item -->
+          <div class="swiper-slide">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-lg border border-slate-700 h-80"
+            >
+              <img
+                src="../assets/resource/movie-1.jpg"
+                alt="Movie"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 bg-black/50"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h1 class="text-xl font-bold mb-1">Frey</h1>
+                <div class="flex justify-between text-sm text-gray-300">
+                  <span>2021</span>
+                  <span><i class="bi bi-star-fill text-yellow-500"></i> 7.9</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-lg border border-slate-700 h-80"
+            >
+              <img
+                src="../assets/resource/movie-2.jpg"
+                alt="Movie"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 bg-black/50"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h1 class="text-xl font-bold mb-1">Arrival</h1>
+                <div class="flex justify-between text-sm text-gray-300">
+                  <span>2022</span>
+                  <span><i class="bi bi-star-fill text-yellow-500"></i> 8.1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-lg border border-slate-700 h-80"
+            >
+              <img
+                src="../assets/resource/movie-3.jpg"
+                alt="Movie"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 bg-black/50"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h1 class="text-xl font-bold mb-1">Annette</h1>
+                <div class="flex justify-between text-sm text-gray-300">
+                  <span>2023</span>
+                  <span><i class="bi bi-star-fill text-yellow-500"></i> 7.8</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-lg border border-slate-700 h-80"
+            >
+              <img
+                src="../assets/resource/movie-4.jpg"
+                alt="Movie"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 bg-black/50"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h1 class="text-xl font-bold mb-1">Moonlight</h1>
+                <div class="flex justify-between text-sm text-gray-300">
+                  <span>2020</span>
+                  <span><i class="bi bi-star-fill text-yellow-500"></i> 8.2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-lg border border-slate-700 h-80"
+            >
+              <img
+                src="../assets/resource/movie-5.jpg"
+                alt="Movie"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 bg-black/50"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h1 class="text-xl font-bold mb-1">Metro Polis</h1>
+                <div class="flex justify-between text-sm text-gray-300">
+                  <span>2024</span>
+                  <span><i class="bi bi-star-fill text-yellow-500"></i> 8.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+
+      <!-- Bottom White Info Box -->
+     <section class="bg-white w-4/5 h-[30vh] mx-auto my-10 rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between px-6 md:px-10"> 
+      <!-- LEFT SIDE --> 
+       <div class="flex items-center gap-4">
+         <div class="bg-red-600 text-white p-4 rounded-full"> <i class="bi bi-wifi text-3xl"></i> </div>
+          <div>
+             <p class="text-gray-700 text-lg font-semibold">Call us Now for Coverage Area</p>
+              <p class="text-2xl font-bold text-black">0123456789</p>
+             </div> 
+            </div> <!-- RIGHT SIDE -->
+             <div class="mt-6 md:mt-0"> <img src="../assets/icons/dotted-map.png" alt="Coverage Image" class="w-56 md:w-[600px] rounded-lg object-cover shadow mt-2" /> </div>
+             </section>
+    </section>
+
+<!-- feature  section  end   -->
+
+
+
+
+
+<!-- why select us section start  -->
+
+<section class="w-11/12 mx-auto py-16">
+  <!-- SECTION TITLE -->
+  <div class="text-center mb-12">
+    <p class="text-gray-500 uppercase tracking-wider font-semibold flex items-center justify-center gap-2">
+      <span class="w-1.5 h-6 bg-red-600 inline-block"></span> Why Select Us
+    </p>
+    <h2 class="text-4xl font-bold mt-3">
+      Why you use <span class="text-black">StarNet</span> fibre internet
+    </h2>
+  </div>
+
+  <!-- MAIN GRID -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 items-stretch">
+    <!-- LEFT CARD -->
+    <div class="relative rounded-lg overflow-hidden shadow-md">
+      <img src="../assets/background/10.jpg" alt="StarNet Home Wifi" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+      <div class="absolute top-0 left-0 p-8 text-white flex flex-col justify-center h-full">
+        <h3 class="text-2xl font-bold mb-3">StarNet Home Wifi</h3>
+        <p class="text-lg mb-2">Starting From</p>
+        <p class="text-2xl font-bold text-yellow-400">$49.9 <span class="text-base text-white">/ Month</span></p>
+        <button class="bg-red-600 hover:bg-red-700 text-white font-semibold mt-6 px-6 py-3 rounded-md shadow-md transition-all duration-300">
+          Get Started Now <i class="bi bi-arrow-right ml-2"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- RIGHT GRID BOXES -->
+    <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- CARD 1 -->
+      <div class="border rounded-lg p-8 hover:shadow-lg transition-all duration-300">
+        <i class="bi bi-router-fill text-red-600 text-3xl mb-4"></i>
+        <h4 class="text-lg font-bold mb-2">Fastest Broadband speeds</h4>
+        <p class="text-gray-600 text-sm">StarNet Internet is providing one of the fastest broadband internet</p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="border rounded-lg p-8 hover:shadow-lg transition-all duration-300">
+        <i class="bi bi-telephone-fill text-red-600 text-3xl mb-4"></i>
+        <h4 class="text-lg font-bold mb-2">24/7 Hotline service</h4>
+        <p class="text-gray-600 text-sm">StarNet Internet is providing one of the fastest broadband internet</p>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="border rounded-lg p-8 hover:shadow-lg transition-all duration-300">
+        <i class="bi bi-headset text-red-600 text-3xl mb-4"></i>
+        <h4 class="text-lg font-bold mb-2">Advance Monitoring</h4>
+        <p class="text-gray-600 text-sm">StarNet Internet is providing one of the fastest broadband internet</p>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="border rounded-lg p-8 hover:shadow-lg transition-all duration-300">
+        <i class="bi bi-lightning-charge-fill text-red-600 text-3xl mb-4"></i>
+        <h4 class="text-lg font-bold mb-2">98%+ Uptime guaranteed.</h4>
+        <p class="text-gray-600 text-sm">StarNet Internet is providing one of the fastest broadband internet</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- why select us section end  -->
+
+<!-- scroll to top start  -->
+<button id="scrollToTopBtn"
+  class="fixed bottom-6 right-6 bg-red-600 hover:bg-black text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-all duration-300 z-50"
+  aria-label="Scroll to top"
+  style="display:none; opacity:0; transform: translateY(12px); transition: opacity 250ms ease, transform 250ms ease, background-color 150ms;">
+  <i class="bi bi-caret-up-fill text-2xl"></i>
+</button>
+
+<!-- scroll to top end  -->
+
+
+
+   
+
+
+<!-- footer section start  -->
+ <footer class="bg-[#0d0d10] text-gray-300">
+  
+  <div class="border-b border-gray-700 flex flex-col md:flex-row justify-between items-center px-6 md:px-16 py-6 gap-4">
+    <div class="flex items-center gap-4">
+      <img src="../assets/logo.png" alt="StarNet Logo" class="w-44" />
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-6">
+    
+      <div class="flex items-center gap-3 bg-[#0d0d10] px-4 py-3 rounded-lg">
+
+  <div class="bg-red-600 p-3 rounded-md flex items-center justify-center">
+        <i class="bi bi-telephone-fill"></i>
+  </div>
+
+ 
+  <div>
+    <p class="text-sm text-gray-300">Call Us On</p>
+    <p class="font-semibold text-white">+880 451 484 445</p>
+  </div>
+</div>
+
+
+      <div class="flex items-center gap-3 bg-[#0d0d10] px-4 py-3 rounded-lg">
+  
+  <div class="bg-red-600 p-3 rounded-md flex items-center justify-center">
+    <i class="bi bi-envelope-fill text-white text-xl"></i>
+  </div>
+
+  
+  <div>
+    <p class="text-sm text-gray-300">Mail to Us</p>
+    <p class="font-semibold text-white">StarNet@support.com</p>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Main Footer -->
+  <div class="px-6 md:px-16 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 relative">
+    
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-3">About Us</h3>
+      <p class="text-gray-400 text-sm leading-relaxed mb-4">
+       Road # 03, House # 10, City Housing, Boshila, Mohammadpur, Dhaka.
+      </p>
+
+      <div class="flex gap-3">
+        <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 hover:bg-red-600 rounded-full">
+          
+           <i class="bi bi-facebook"></i>
+        </a>
+        <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 hover:bg-red-600 rounded-full">
+          
+           <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 hover:bg-red-600 rounded-full">
+          
+           <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-3">Useful Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-red-500 transition">› About Us</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">› Our Services</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">› Case Study</a></li>
+        <li><a href="teammembers.html" class="hover:text-red-500 transition">› Our Team</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">› News & Media</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-3">Services</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">› Custom Software Development</a></li>
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">› Web & Mobile App Development</a></li>
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">›E-commerce & ERP Solutions</a></li>
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">› Cloud Computing & IT Infrastructure</a></li>
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">› Digital Marketing & Branding</a></li>
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">› AI-Powered Solutions</a></li>
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">›Cybersecurity & Data Protection</a></li>
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">›Business Consultancy & Strategy</a></li>
+      </ul>
+    </div>
+
+   
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-3">Newsletter</h3>
+      <p class="text-gray-400 text-sm mb-4">Sign up for alerts, our latest blogs, thoughts, and insights.</p>
+      <div class="flex">
+        <input type="email" placeholder="Your Email"
+               class="w-full px-3 py-2 text-gray-900 rounded-l-md focus:outline-none" />
+        <button class="bg-red-600 hover:bg-red-700 px-4 rounded-r-md text-white">
+          
+           <i class="bi bi-send-fill"></i>
+          
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="border-t border-gray-700 py-4 text-center text-sm text-gray-500">
+    © Copyrights reserved by <span class="text-red-500">Rafusoft</span>
+  </div>
+
+</footer>
+
+
+
+
+
+
+<!-- footer section end  -->
+
+
+
+
+
+
+<!-- navbar script start -->
+
+ <script>
+  
+  const navbar = document.getElementById("mainNav");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      navbar.classList.add("fixed", "top-0", "shadow-md");
+    } else {
+      navbar.classList.remove("fixed", "top-0", "shadow-md");
+    }
+  });
+
+  
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+  
+  const servicesToggle = document.getElementById("services-toggle");
+  const servicesList = document.getElementById("services-list");
+  servicesToggle.addEventListener("click", () => {
+    servicesList.classList.toggle("hidden");
+  });
+
+    // Mobile menu close
+  document.getElementById("mobile-menu-close").addEventListener("click", () => {
+    document.getElementById("mobile-menu").classList.add("hidden");
+  });
+</script>
+<!-- navbar script end -->
+
+ <!-- feature section script start  -->
+  <script>
+      var swiper = new Swiper(".featuredSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    </script>
+ <!-- feature section script  end   -->
+
+
+ <!-- Counter Animation Script start -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+    const speed = 80; // Lower = faster
+
+    counters.forEach((counter) => {
+      const updateCount = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+
+        const increment = target / speed;
+
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCount, 40);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCount();
+    });
+  });
+</script>
+ <!-- Counter Animation Script  end -->
+
+ <!-- scroll to top start  -->
+
+   <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.getElementById('scrollToTopBtn');
+
+    
+    function toggleScrollBtn() {
+      if (window.scrollY > 200) {
+      
+        btn.style.display = 'block';            
+        
+        requestAnimationFrame(() => {
+          btn.style.opacity = '1';
+          btn.style.transform = 'translateY(0)';
+          btn.style.pointerEvents = 'auto';
+        });
+      } else {
+     
+        btn.style.opacity = '0';
+        btn.style.transform = 'translateY(12px)';
+        btn.style.pointerEvents = 'none';
+       
+        setTimeout(() => {
+          if (btn.style.opacity === '0') btn.style.display = 'none';
+        }, 260); 
+      }
+    }
+
+    
+    toggleScrollBtn();
+
+    
+    window.addEventListener('scroll', toggleScrollBtn, { passive: true });
+
+    
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
+<!-- scroll to top end  -->
+
+
+</body>
+</html>

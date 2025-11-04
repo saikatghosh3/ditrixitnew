@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- navbar start  -->
+ <!-- Top Info Bar -->
+<div class="hidden lg:block w-full bg-white border-b text-sm">
+  <div class="max-w-11/12 mx-auto flex justify-between items-center px-6 py-2">
+    <div class="flex flex-wrap items-center gap-6 text-gray-700">
+      <div class="flex items-center gap-2">
+        <i class="bi bi-geo-alt text-red-600"></i>
+        <span>1901 Thornridge Cir. Shiloh, Hawaii 81063</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <i class="bi bi-clock text-red-600"></i>
+        <span>Mon - Fri: 09.00am - 10.00pm</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <i class="bi bi-envelope text-red-600"></i>
+        <span>info_ourmail@maxnet.com</span>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <div class="flex items-center gap-1">
+        <a href="#" class="bg-red-600 text-white px-2 py-1 rounded-sm"><i class="bi bi-x"></i></a>
+        <a href="#" class="bg-red-600 text-white px-2 py-1 rounded-sm"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="bg-red-600 text-white px-2 py-1 rounded-sm"><i class="bi bi-pinterest"></i></a>
+        <a href="#" class="bg-red-600 text-white px-2 py-1 rounded-sm"><i class="bi bi-instagram"></i></a>
+      </div>
+      <a href="TermsAndCondition.html" class="text-gray-600 hover:text-red-600">Privacy & Policy</a>
+      <a href="#" class="text-gray-600 hover:text-red-600">FAQ’S</a>
+      <a href="#" class="text-gray-600 hover:text-red-600">Testimonials</a>
+    </div>
+  </div>
+</div>
+
+<!-- Main Navbar -->
+<nav id="mainNav" class="w-full bg-white shadow-sm transition-all duration-500 z-50">
+  <div class="max-w-11/12 mx-auto flex justify-between items-center px-6 md:px-6 h-20">
+
+    <!--  Logo -->
+    
+    <div class="bg-black flex items-center px-4 py-2 -ml-8">
+  <a href="homePage.html">
+    <img 
+      src="../assets/logo.png" 
+      alt="StarNet company logo" 
+      class="h-16 object-contain cursor-pointer"
+    >
+  </a>
+</div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex items-center gap-8 font-medium ">
+      <li class="relative group">
+        <a href="aboutUs.html" class="nav-link">About Us+</a>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+      </li>
+
+<li class="relative group">
+  <a href="#" class="nav-link flex items-center gap-1">
+    Services +
+  </a>
+  <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+
+  <ul
+    class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-lg py-2 w-64 text-gray-700 z-50"
+  >
+    <li>
+      <a
+        href="serviceDetails.html#custom-software"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        Custom Software Development
+      </a>
+    </li>
+    <li>
+      <a
+        href="serviceDetails.html#web-mobile"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        Web and Mobile App Development
+      </a>
+    </li>
+    <li>
+      <a
+        href="serviceDetails.html#ecommerce-erp"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        E-commerce and ERP Solution
+      </a>
+    </li>
+    <li>
+      <a
+        href="serviceDetails.html#cloud-it"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        Cloud Computing & IT Infrastructure
+      </a>
+    </li>
+    <li>
+      <a
+        href="serviceDetails.html#digital-marketing"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        Digital Marketing & Branding
+      </a>
+    </li>
+    <li>
+      <a
+        href="serviceDetails.html#ai-solutions"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        AI-powered Solutions
+      </a>
+    </li>
+    <li>
+      <a
+        href="serviceDetails.html#cybersecurity"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        Cybersecurity & Data Protection
+      </a>
+    </li>
+    <li>
+      <a
+        href="serviceDetails.html#business-consultancy"
+        class="block px-4 py-2 hover:bg-gray-100"
+      >
+        Business Consultancy & Strategy
+      </a>
+    </li>
+  </ul>
+</li>
+
+
+      <li class="relative group">
+        <a href="newsGrid.html" class="nav-link inline-block relative px-2 py-1">
+          Blogs +
+          <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </li>
+
+      <li class="relative group">
+        <a href="contactUs.html" class="nav-link inline-block relative px-2 py-1">
+          Contact +
+          <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Right Side Icons -->
+    <div class="flex items-center gap-4">
+      <div class="hidden md:flex items-center bg-gray-100 rounded-full px-4 py-1">
+        <i class="bi bi-headphones text-red-600 text-xl mr-2"></i>
+        <div>
+          <p class="text-xs text-gray-500 leading-none">Call Us Now</p>
+          <p class="text-sm font-semibold text-gray-800">+36 55 540 069</p>
+        </div>
+      </div>
+
+      <i class="bi bi-search text-xl text-gray-700 hover:text-red-600 cursor-pointer"></i>
+
+      <div class="relative cursor-pointer">
+        <i class="bi bi-cart2 text-xl text-gray-700 hover:text-red-600"></i>
+        <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-1 rounded-full">0</span>
+      </div>
+
+      <!-- Hamburger -->
+      <button id="menu-btn" class="block md:hidden text-2xl text-gray-700 hover:text-red-600">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </div>
+
+  
+
+
+ <!-- Mobile Menu -->
+<div
+  id="mobile-menu"
+  class="fixed inset-0 z-50 hidden md:hidden bg-black bg-opacity-95 overflow-y-auto"
+>
+  <div class="flex flex-col text-white font-medium min-h-screen">
+
+    <!-- Top: Close Button and Logo -->
+    <div class="flex items-center justify-between px-6 py-4 border-b border-gray-700">
+      <!-- Logo -->
+      <a href="homePage.html">
+        <img src="../assets/logo.png" alt="Company Logo" class="h-16 object-contain" />
+      </a>
+      <!-- Close Button -->
+      <button id="mobile-menu-close" class="text-white text-3xl hover:text-red-500">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="flex flex-col w-full text-white font-medium border-b border-gray-700">
+      <li class="px-6 py-3 border-b border-gray-700"><a href="aboutUs.html">About Us</a></li>
+
+      <!-- Services Dropdown -->
+      <li class="px-6 py-3 border-b border-gray-700 relative">
+        <button id="services-toggle" class="w-full text-left flex items-center justify-between">
+          Services <i class="bi bi-plus-lg"></i>
+        </button>
+        <ul id="services-list" class="hidden mt-2 ml-4 text-sm space-y-1">
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">Custom Software Development</a></li>
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">Web and Mobile App Development</a></li>
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">E-commerce and ERP Solution</a></li>
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">Cloud Computing & IT Infrastructure</a></li>
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">Digital Marketing & Branding</a></li>
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">AI-powered Solutions</a></li>
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">Cybersecurity & Data Protection</a></li>
+          <li class="px-6 py-3 border-b border-gray-700"><a href="ServiceDetails.html" class="hover:text-red-500">Business Consultancy & Strategy</a></li>
+        </ul>
+      </li>
+
+      <li class="px-6 py-3 border-b border-gray-700"><a href="newsGrid.html">Blogs</a></li>
+      <li class="px-6 py-3 border-b border-gray-700"><a href="contactUs.html">Contact</a></li>
+    </ul>
+
+    <!-- Contact Info -->
+    <div class="flex flex-col space-y-4 text-white px-6 py-4">
+      <!-- Phone -->
+      <div class="flex items-center gap-2">
+        <i class="bi bi-telephone-fill text-red-500"></i>
+        <span>+88012345678</span>
+      </div>
+
+      <!-- Email -->
+      <div class="flex items-start gap-2">
+        <i class="bi bi-envelope-fill text-red-500 mt-1"></i>
+        <div class="flex flex-col leading-tight">
+          <span>Send Mail</span>
+          <span class="text-gray-400 text-sm">help@company.com</span>
+        </div>
+      </div>
+
+      <!-- Timing -->
+      <div class="flex items-start gap-2">
+        <i class="bi bi-clock-fill text-red-500 mt-1"></i>
+        <div class="flex flex-col leading-tight">
+          <span>Timing</span>
+          <span class="text-gray-400 text-sm">Mon–Sat: 8:00 – 6:30</span>
+          <span class="text-gray-400 text-sm">Sunday – Closed</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="flex gap-4 text-xl px-6 py-4">
+      <a href="#" class="hover:text-red-500"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="hover:text-red-500"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="hover:text-red-500"><i class="bi bi-pinterest"></i></a>
+      <a href="#" class="hover:text-red-500"><i class="bi bi-instagram"></i></a>
+    </div>
+
+  </div>
+</div>
+
+</nav>
+
+
+
+    <!-- navbar end  -->
+  
+      <!-- middle section start -->
+      
+
+      <section class="relative h-[60vh] bg-cover bg-center flex items-center justify-center" style="background-image: url('/assets/background/page-title.jpg');">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative text-center text-white">
+      <h1 class="text-5xl font-bold mb-3">News Details</h1>
+      <p class="text-sm"><a href="#" class="text-red-500 hover:underline">Home</a> /News </p>
+      </div>
+     </section>
+       <!-- middle section end -->
+
+
+
+  <!-- BLOG DETAILS SECTION -->
+  <section class="w-full py-10 px-4 md:px-10 lg:px-16">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+
+      <!-- LEFT CONTENT -->
+      <div class="lg:col-span-2">
+        <!-- Featured Image -->
+        <div class="relative">
+          <img src="../assets/background/4.jpg" alt="Blog Image" class="w-full rounded-lg object-cover">
+          <div class="absolute bottom-3 right-3 bg-red-600 text-white px-3 py-1 rounded-md text-sm font-semibold">
+            28 Oct
+          </div>
+        </div>
+
+        <!-- Author & Comments -->
+       <div class="flex items-center gap-6 mt-4 text-sm text-gray-600">
+  <p class="flex items-center gap-2">
+    <i class="bi bi-person-fill text-red-600"></i> Admin
+  </p>
+  <p class="flex items-center gap-2">
+    <i class="bi bi-chat-dots-fill text-red-600"></i> 02 Comments
+  </p>
+</div>
+
+        <!-- Blog Title -->
+        <h1 class="text-2xl md:text-3xl font-bold mt-4 mb-4">
+          More than 1K corporate clients have trust in us
+        </h1>
+
+        <!-- Blog Content -->
+        <div class="space-y-5 leading-relaxed text-gray-700">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laborum, aspernatur distinctio explicabo, consectetur beatae voluptate ipsa quae adipisci natus obcaecati deserunt voluptatibus! Ex quibusdam labore quaerat velit fugiat quisquam et quis incidunt beatae natus voluptate consequuntur nobis, ducimus saepe tempora exercitationem est alias dolorum nostrum? Asperiores odit ipsum iusto deserunt beatae sint autem dolorem nemo minus laudantium cum officia ex vero mollitia, nesciunt repudiandae voluptatibus provident pariatur sed a? Praesentium blanditiis possimus sint quisquam esse aliquam dicta fugiat explicabo quis aperiam? Explicabo reprehenderit sapiente excepturi velit vitae quam consequatur, enim eius aspernatur dicta nulla et at fugiat unde iusto quos, recusandae, temporibus quidem id facere error non. Doloribus aut magni eos aliquid eum officia quas fugiat dolores. Similique laborum rem impedit aut sit commodi id explicabo exercitationem omnis iste sed, voluptatibus esse, libero aspernatur animi. Magnam dolor voluptatem porro, quis, autem, harum libero quos saepe tenetur distinctio minima ex nam rerum. Veniam reiciendis aliquam ea soluta labore ipsam non velit minima deleniti! Repellendus aperiam voluptatum quisquam perspiciatis iusto inventore nesciunt. Omnis ab eum sunt dignissimos. Dolor, delectus optio? Earum assumenda esse officia possimus, dolore blanditiis rerum, eaque numquam, ipsum quaerat repellat facere doloremque optio libero debitis quibusdam. Dolores, iusto!</p>
+            
+        </div>
+
+        <!-- Tags -->
+        <div class="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+  <!-- LEFT: Tags -->
+  <div class="flex flex-wrap items-center gap-3">
+    <span class="font-semibold">Tags:</span>
+    <span class="bg-orange-600 text-white px-3 py-2 rounded-lg hover:bg-red-600 underline text-sm cursor-pointer transition-all duration-300">Innovation</span>
+    <span class="bg-orange-600 text-white px-3 py-2 rounded-lg hover:bg-red-600 underline text-sm cursor-pointer transition-all duration-300">Business</span>
+  </div>
+
+  <!-- RIGHT: Social Icons -->
+  <div class="flex items-center gap-5 text-gray-500 text-xl">
+    <a href="#" class="hover:text-orange-600 transition-colors duration-300">
+      <i class="bi bi-twitter"></i>
+    </a>
+    <a href="#" class="hover:text-orange-600 transition-colors duration-300">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <a href="#" class="hover:text-orange-600 transition-colors duration-300">
+      <i class="bi bi-pinterest"></i>
+    </a>
+    <a href="#" class="hover:text-orange-600 transition-colors duration-300">
+      <i class="bi bi-instagram"></i>
+    </a>
+  </div>
+</div>
+
+        <!-- Related Posts -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+  <div class="border p-5 h-48 sm:h-56 flex items-center justify-center text-center rounded-lg shadow-sm hover:shadow-md transition duration-300 hover:bg-red-600 text-black">
+    <h3 class="font-semibold text-lg sm:text-xl leading-snug">
+      How Much a Website Cost to Build
+    </h3>
+  </div>
+  <div class="border p-5 h-48 sm:h-56 flex items-center justify-center text-center rounded-lg shadow-sm hover:shadow-md transition duration-300 hover:bg-red-600 text-black">
+    <h3 class="font-semibold text-lg sm:text-xl leading-snug">
+      How to lead a healthy & well-balanced life
+    </h3>
+  </div>
+</div>
+
+      
+        <!-- Comments Section -->
+<div class="mt-10">
+  <!-- Heading -->
+  <h2 class="text-2xl font-bold mb-6 text-left">2 Comments</h2>
+
+  <!-- Single Comment -->
+  <div class="border rounded-lg p-5 mb-6 shadow-sm hover:shadow-md transition duration-300">
+    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+      <!-- Left side: Image + Name + Comment -->
+      <div class="flex gap-4 items-start">
+        <img src="/assets/background/round.webp" alt="User" class="w-16 h-16 rounded-full object-cover flex-shrink-0">
+        <div>
+          <h4 class="font-semibold text-lg">Kevin Martin</h4>
+          <p class="text-gray-600 mt-2 leading-relaxed">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit expedita ratione inventore magni? Ipsa, distinctio? Unde odit quaerat ab obcaecati iste officiis eos totam similique quibusdam nostrum eligendi nobis, exercitationem laboriosam voluptatum dicta commodi, quisquam tenetur ea'
+          </p>
+        </div>
+      </div>
+      <!-- Right side: Reply Button -->
+      <button class="bg-red-600 hover:bg-orange-500 text-white text-sm px-4 py-2 rounded-md transition duration-300">
+        Reply
+      </button>
+    </div>
+  </div>
+
+  <!-- Second Comment -->
+  <div class="border rounded-lg p-5 mb-6 shadow-sm hover:shadow-md transition duration-300">
+    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+      <!-- Left side: Image + Name + Comment -->
+      <div class="flex gap-4 items-start">
+        <img src="/assets/background/round.webp" alt="User" class="w-16 h-16 rounded-full object-cover flex-shrink-0">
+        <div>
+          <h4 class="font-semibold text-lg">Sarah Albert</h4>
+          <p class="text-gray-600 mt-2 leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, quas placeat magnam amet recusandae voluptas quis, doloremque at sunt quod neque beatae? Iusto dolores ipsam sunt nesciunt corporis maiores beatae asperiores aut itaque aspernatur.
+          </p>
+        </div>
+      </div>
+      <!-- Right side: Reply Button -->
+      <button class="bg-red-600 hover:bg-orange-500 text-white text-sm px-4 py-2 rounded-md transition duration-300">
+        Reply
+      </button>
+    </div>
+  </div>
+</div>
+
+
+        <!-- Leave Comment -->
+        <div class="mt-10">
+          <h2 class="text-2xl font-bold mb-6">Leave a Comment</h2>
+          <form class="space-y-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input type="text" placeholder="Enter Name" class="border border-gray-300 p-3 rounded-md w-full focus:ring-2 focus:ring-red-600">
+              <input type="email" placeholder="Enter Email" class="border border-gray-300 p-3 rounded-md w-full focus:ring-2 focus:ring-red-600">
+            </div>
+            <textarea placeholder="Enter Message" rows="5" class="border border-gray-300 p-3 rounded-md w-full focus:ring-2 focus:ring-red-600"></textarea>
+            <button type="submit" class="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700">Submit Comment</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="space-y-8">
+        <!-- Search bar -->
+        <div class="bg-gray-50 p-5 rounded-lg">
+  <div class="relative">
+    <i class="bi bi-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 text-lg"></i>
+    <input 
+      type="text" 
+      placeholder="Search here..." 
+      class="w-full border border-gray-300 rounded-md pl-10 pr-4 py-3 text-center focus:ring-2 focus:ring-red-600 focus:outline-none"
+    >
+  </div>
+</div>
+
+        <!-- Latest Posts -->
+       <div class="bg-gray-50 p-5 rounded-lg">
+  <h3 class="font-bold mb-4 text-lg">Latest Posts</h3>
+
+  <div class="space-y-5">
+
+    <!-- Single Post -->
+    <div class="flex gap-4 items-center">
+      <img src="../assets/resource/news-4.jpg" alt="Post" class="w-16 h-16 object-cover rounded-md flex-shrink-0">
+      <div class="flex-1">
+         <p class="text-gray-500 text-xs mt-1 flex items-center gap-1">
+          <i class="bi bi-person text-red-600"></i> Admin
+        </p>
+        <h4 class="font-semibold text-gray-800 text-sm leading-snug hover:text-red-600 cursor-pointer transition duration-300">
+          Discover our proven formula to build a site
+        </h4>
+       
+      </div>
+    </div>
+
+    <!-- Single Post -->
+    <div class="flex gap-4 items-center">
+      <img src="../assets/resource/news-5.jpg" alt="Post" class="w-16 h-16 object-cover rounded-md flex-shrink-0">
+      <div class="flex-1">
+        <p class="text-gray-500 text-xs mt-1 flex items-center gap-1">
+          <i class="bi bi-person text-red-600"></i> Admin
+        </p>
+        <h4 class="font-semibold text-gray-800 text-sm leading-snug hover:text-red-600 cursor-pointer transition duration-300">
+          Newsweek may give up best visual cover
+        </h4>
+        
+      </div>
+    </div>
+
+    <!-- Single Post -->
+    <div class="flex gap-4 items-center">
+      <img src="../assets/resource/news-4.jpg" alt="Post" class="w-16 h-16 object-cover rounded-md flex-shrink-0">
+      <div class="flex-1">
+        <p class="text-gray-500 text-xs mt-1 flex items-center gap-1">
+          <i class="bi bi-person text-red-600"></i> Admin
+        </p>
+        <h4 class="font-semibold text-gray-800 text-sm leading-snug hover:text-red-600 cursor-pointer transition duration-300">
+          You should know about business plan
+        </h4>
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+        <!-- Categories -->
+          <div class="bg-gray-50 p-5 rounded-lg">
+  <h3 class="font-bold mb-4 text-lg">Categories</h3>
+
+  <ul class="space-y-3 text-gray-700">
+    <li class="border border-gray-300 rounded-md px-5 py-3 bg-gray-100 hover:bg-white hover:shadow-md transition duration-300 cursor-pointer">
+      Broadband
+    </li>
+    <li class="border border-gray-300 rounded-md px-5 py-3 bg-gray-100 hover:bg-white hover:shadow-md transition duration-300 cursor-pointer">
+      Fiber
+    </li>
+    <li class="border border-gray-300 rounded-md px-5 py-3 bg-gray-100 hover:bg-white hover:shadow-md transition duration-300 cursor-pointer">
+      Satellite TV
+    </li>
+    <li class="border border-gray-300 rounded-md px-5 py-3 bg-gray-100 hover:bg-white hover:shadow-md transition duration-300 cursor-pointer">
+      Connection
+    </li>
+    <li class="border border-gray-300 rounded-md px-5 py-3 bg-gray-100 hover:bg-white hover:shadow-md transition duration-300 cursor-pointer">
+      Application
+    </li>
+  </ul>
+</div>
+
+        <!-- Recent Comments -->
+        <div class="bg-gray-50 p-5 rounded-lg">
+  <h3 class="font-bold mb-4 text-lg">Recent Comments</h3>
+  <ul class="space-y-3 text-gray-700">
+    <li class="flex items-center">
+      <span class="flex items-center justify-center w-12 h-12 bg-red-500 text-white rounded-full mr-2 transition-colors duration-300 hover:bg-orange-500">💬</span>
+      John Doe on template: comment
+    </li>
+    <li class="flex items-center">
+      <span class="flex items-center justify-center w-12 h-12 bg-red-500 text-white rounded-full mr-2 transition-colors duration-300 hover:bg-orange-500">💬</span>
+      A customer on new mobile app
+    </li>
+    <li class="flex items-center">
+      <span class="flex items-center justify-center w-12 h-12 bg-red-500 text-white rounded-full mr-2 transition-colors duration-300 hover:bg-orange-500">💬</span>
+      A customer on new mobile app
+    </li>
+    <li class="flex items-center">
+      <span class="flex items-center justify-center w-12 h-12 bg-red-500 text-white rounded-full mr-2 transition-colors duration-300 hover:bg-orange-500">💬</span>
+      A customer on new mobile app
+    </li>
+</ul>
+</div>
+
+         <!-- Tags -->
+          <div class="bg-gray-50 p-5 rounded-lg">
+  <h3 class="font-bold mb-4 text-lg">Tags</h3>
+  
+  <div class="grid grid-cols-2 gap-3">
+    <!-- LEFT COLUMN: 4 stacked items -->
+    <div class="flex flex-col gap-3">
+      <span class="border border-gray-300 text-center px-3 py-2 rounded-2xl   text-gray-700 text-sm cursor-pointer hover:bg-gray-200 transition">Consulting</span>
+      <span class="border border-gray-300 text-center px-3 py-2 rounded-2xl text-gray-700 text-sm cursor-pointer hover:bg-gray-200 transition">Agency</span>
+      <span class="border border-gray-300 text-center px-3 py-2 rounded-2xl text-gray-700 text-sm cursor-pointer hover:bg-gray-200 transition">Business</span>
+      <span class="border border-gray-300 text-center px-3 py-2 rounded-2xl text-gray-700 text-sm cursor-pointer hover:bg-gray-200 transition">Digital</span>
+    </div>
+
+    <!-- RIGHT COLUMN: -->
+    <div class="flex flex-col gap-3">
+      <span class="border border-gray-300 text-center px-3 py-2 rounded-2xl text-gray-700 text-sm cursor-pointer hover:bg-gray-200 transition">Technology</span>
+      <span class="border border-gray-300 text-center px-3 py-2 rounded-2xl text-gray-700 text-sm cursor-pointer hover:bg-gray-200 transition">Marketing</span>
+    </div>
+  </div>
+</div>
+
+      </aside>
+    </div>
+  </section>
+
+
+<!-- scroll to top start  -->
+<button id="scrollToTopBtn"
+  class="fixed bottom-6 right-6 bg-red-600 hover:bg-black text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition-all duration-300 z-50"
+  aria-label="Scroll to top"
+  style="display:none; opacity:0; transform: translateY(12px); transition: opacity 250ms ease, transform 250ms ease, background-color 150ms;">
+  <i class="bi bi-caret-up-fill text-2xl"></i>
+</button>
+
+<!-- scroll to top end  -->
+
+
+  <!-- footer section start  -->
+ <footer class="bg-[#0d0d10] text-gray-300">
+  
+  <div class="border-b border-gray-700 flex flex-col md:flex-row justify-between items-center px-6 md:px-16 py-6 gap-4">
+    <div class="flex items-center gap-4">
+      <img src="../assets/logo.png" alt="StarNet Logo" class="w-44" />
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-6">
+    
+      <div class="flex items-center gap-3 bg-[#0d0d10] px-4 py-3 rounded-lg">
+
+  <div class="bg-red-600 p-3 rounded-md flex items-center justify-center">
+        <i class="bi bi-telephone-fill"></i>
+  </div>
+
+ 
+  <div>
+    <p class="text-sm text-gray-300">Call Us On</p>
+    <p class="font-semibold text-white">+880 451 484 445</p>
+  </div>
+</div>
+
+
+      <div class="flex items-center gap-3 bg-[#0d0d10] px-4 py-3 rounded-lg">
+  <!-- Red Icon Box -->
+  <div class="bg-red-600 p-3 rounded-md flex items-center justify-center">
+    <i class="bi bi-envelope-fill text-white text-xl"></i>
+  </div>
+
+  <!-- Text Section -->
+  <div>
+    <p class="text-sm text-gray-300">Mail to Us</p>
+    <p class="font-semibold text-white">StarNet@support.com</p>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- Main Footer -->
+  <div class="px-6 md:px-16 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 relative">
+    
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-3">About Us</h3>
+      <p class="text-gray-400 text-sm leading-relaxed mb-4">
+        To get started with us, please go over all of our internet plans and other plans to let our operators.
+      </p>
+      <div class="flex gap-3">
+        <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 hover:bg-red-600 rounded-full">
+          
+           <i class="bi bi-facebook"></i>
+        </a>
+        <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 hover:bg-red-600 rounded-full">
+          
+           <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 hover:bg-red-600 rounded-full">
+          
+           <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <!--  Links -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-3">Useful Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-red-500 transition">› About Us</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">› Our Services</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">› Our Clients</a></li>
+      <li><a href="teammembers.html" class="hover:text-red-500 transition">› Our Team</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">› News & Media</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-3">Services</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">› Custom Software Development</a></li>
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">› Web & Mobile App Development</a></li>
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">›E-commerce & ERP Solutions</a></li>
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">› Cloud Computing & IT Infrastructure</a></li>
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">› Digital Marketing & Branding</a></li>
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">› AI-Powered Solutions</a></li>
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">›Cybersecurity & Data Protection</a></li>
+        <li><a href="ServiceDetails.html" class="hover:text-red-500 transition">›Business Consultancy & Strategy</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-3">Newsletter</h3>
+      <p class="text-gray-400 text-sm mb-4">Sign up for alerts, our latest blogs, thoughts, and insights.</p>
+      <div class="flex">
+        <input type="email" placeholder="Your Email"
+               class="w-full px-3 py-2 text-gray-900 rounded-l-md focus:outline-none" />
+        <button class="bg-red-600 hover:bg-red-700 px-4 rounded-r-md text-white">
+          
+           <i class="bi bi-send-fill"></i>
+          
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="border-t border-gray-700 py-4 text-center text-sm text-gray-500">
+    © Copyrights reserved by <span class="text-red-500">Rafusoft</span>
+  </div>
+
+</footer>
+ <!-- footer section end  -->
+
+
+
+
+<!-- navbar script start -->
+ <script>
+  
+  const navbar = document.getElementById("mainNav");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      navbar.classList.add("fixed", "top-0", "shadow-md");
+    } else {
+      navbar.classList.remove("fixed", "top-0", "shadow-md");
+    }
+  });
+
+ 
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+ 
+  const servicesToggle = document.getElementById("services-toggle");
+  const servicesList = document.getElementById("services-list");
+  servicesToggle.addEventListener("click", () => {
+    servicesList.classList.toggle("hidden");
+  });
+
+    // Mobile menu close
+  document.getElementById("mobile-menu-close").addEventListener("click", () => {
+    document.getElementById("mobile-menu").classList.add("hidden");
+  });
+</script>
+<!-- navbar script end -->
+
+
+
+  <!-- scroll to top start  -->
+
+   <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.getElementById('scrollToTopBtn');
+
+    
+    function toggleScrollBtn() {
+      if (window.scrollY > 200) {
+      
+        btn.style.display = 'block';            
+        
+        requestAnimationFrame(() => {
+          btn.style.opacity = '1';
+          btn.style.transform = 'translateY(0)';
+          btn.style.pointerEvents = 'auto';
+        });
+      } else {
+     
+        btn.style.opacity = '0';
+        btn.style.transform = 'translateY(12px)';
+        btn.style.pointerEvents = 'none';
+       
+        setTimeout(() => {
+          if (btn.style.opacity === '0') btn.style.display = 'none';
+        }, 260); 
+      }
+    }
+
+    
+    toggleScrollBtn();
+
+    
+    window.addEventListener('scroll', toggleScrollBtn, { passive: true });
+
+    
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
+<!-- scroll to top end  -->
+
+
+
+</body>
+</html>

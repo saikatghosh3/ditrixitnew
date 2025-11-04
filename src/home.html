@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Test</title>
+  <link rel="stylesheet" href="../dist/output.css">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <style>
+      
+       /* testimonial css start  */
+        .section-bg {
+            background-image: url('../assets/background/6.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.9;
+        }
+        .card-container {
+            width: 600px;
+            height: 250px;
+            position: relative;
+        }
+        .red-card {
+            position: absolute;
+            top: 35px;
+            left: 0;
+            width: 180px;
+            height: 180px;
+            background: #dc2626;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+        .card-container:hover .red-card {
+            background: #000;
+        }
+        .white-card {
+            position: absolute;
+            top: 0px;
+            left: 110px;
+            width: 460px;
+            height: 400px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 25px 25px 25px 60px;
+            z-index: 5;
+        }
+        .quote-badge {
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            transform: translateY(-50%);
+            background: #facc15;
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #d1d5db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            border: 4px solid white;
+        }
+        .swiper-pagination-bullet {
+         
+            width: 10px;
+            height: 10px;
+            opacity: 1;
+            background: rgba(255,255,255,0.7);
+            border-radius: 9999px;
+            /* margin: 20 6px !important; */
+            margin-top: 40px !important;
+
+        }
+        .swiper-pagination-bullet-active {
+            background: #dc2626 !important;
+        }
+
+
+        /* testimonial css end  */
+
+
+       /* connected section css start  */
+        .hero-container {
+      position: relative;
+      overflow: visible;
+    }
+
+    .bg-icons {
+      position: absolute;
+      inset: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      opacity: 0.08; 
+      pointer-events: none;
+    } 
+
+    
+    .image-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+    .ribbon {
+      position: absolute;
+      top: 24px;
+      left: 28px;
+      transform: rotate(-12deg);
+      z-index: 30;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .ribbon .sub {
+      display: block;
+      transform: rotate(12deg); 
+      margin-top: 6px;
+    }
+
+    /* small device adjustments */
+    @media (max-width: 768px) {
+      .ribbon {
+        top: 10px;
+        left: 10px;
+        transform: rotate(-6deg);
+      }
+
+      .ribbon .sub {
+        transform: rotate(6deg);
+      }
+    }
+       /* connected section css end  */  
+
+
+       /* slider css start(fetured section)  */
+
+         .swiper-slide {
+            transition: transform 0.3s ease;
+        }
+        .swiper-slide:hover {
+            transform: translateY(-8px);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+
+       /* slider css end (fetured section)  */
+
+
+       /* feature section css start  */
+         .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .header-bg {
+            /* background-image: url('https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80'); */
+            background-color: #fff;
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            
+        }
+        .swiper-slide {
+            transition: transform 0.3s ease;
+        }
+        .swiper-slide:hover {
+            transform: translateY(-8px);
+        }
+       /* feature section css end  */
+
+    </style>
+
+
+</head>
+<body class="mx-auto">
+  <!-- navbar start  -->
+
+  <!-- Top Info Bar -->
+  <div class="w-full bg-white border-b text-sm ">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-2">
+
+      
+      <div class="flex flex-wrap items-center gap-6 text-gray-700">
+        <div class="flex items-center gap-2">
+          <i class="bi bi-geo-alt text-red-600"></i>
+          <span>1901 Thornridge Cir. Shiloh, Hawaii 81063</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="bi bi-clock text-red-600"></i>
+          <span>Mon - Fri: 09.00am - 10.00pm</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="bi bi-envelope text-red-600"></i>
+          <span>info_ourmail@maxnet.com</span>
+        </div>
+      </div>
+
+      
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-1">
+          <a href="#" class="bg-red-600 text-white px-2 py-1 rounded-sm"><i class="bi bi-x"></i></a>
+          <a href="#" class="bg-red-600 text-white px-2 py-1 rounded-sm"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="bg-red-600 text-white px-2 py-1 rounded-sm"><i class="bi bi-pinterest"></i></a>
+          <a href="#" class="bg-red-600 text-white px-2 py-1 rounded-sm"><i class="bi bi-instagram"></i></a>
+        </div>
+        <a href="#" class="text-gray-600 hover:text-red-600">Privacy & Policy</a>
+        <a href="#" class="text-gray-600 hover:text-red-600">FAQ’S</a>
+        <a href="#" class="text-gray-600 hover:text-red-600">Testimonials</a>
+      </div>
+    </div>
+  </div>
+
+ 
+  <!-- Main Navbar -->
+<div class="w-full h-20 bg-white shadow-sm flex">
+  
+  <!-- Left Logo Section (Fixed Black Background) -->
+  <div class="bg-black flex items-center px-6 py-4">
+    <img src="../assets/logo.png" alt="StarNet company logo" class="w-full h-14 object-contain">
+    
+  </div>
+
+  
+  <div class="flex-1 flex justify-between items-center px-8">
+    
+   
+    <ul class="flex items-center gap-8 font-medium">
+      <li class="relative group">
+        <a href="#" class="nav-link">About Us +</a>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+      </li>
+      <li class="relative group">
+        <a href="#" class="nav-link">Services +</a>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+      </li>
+      <li class="relative group">
+        <a href="#" class="nav-link">Blogs +</a>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+      </li>
+     
+     
+  <li class="relative group">
+  <a href="contactUs.html" class="nav-link inline-block relative px-2 py-1">
+    Contact
+    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+  </a>
+</li>
+    </ul>
+
+    <!-- Right Side Icons -->
+    <div class="flex items-center gap-5">
+      <div class="flex items-center bg-gray-100 rounded-full px-4 py-1">
+        <i class="bi bi-headphones text-red-600 text-xl mr-2"></i>
+        <div>
+          <p class="text-xs text-gray-500 leading-none">Call Us Now</p>
+          <p class="text-sm font-semibold text-gray-800">+36 55 540 069</p>
+        </div>
+      </div>
+      <i class="bi bi-search text-xl text-gray-700 hover:text-red-600 cursor-pointer"></i>
+      <div class="relative cursor-pointer">
+        <i class="bi bi-cart2 text-xl text-gray-700 hover:text-red-600"></i>
+        <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-1 rounded-full">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- navbar end  -->
+
+<!-- hero section1 start  -->
+
+<section class="relative w-11/12 mx-auto min-h-[900px] bg-cover bg-center "
+         style="background-image: url('../assets/main-slider/overlay-dark.png'); height: 500px;">
+
+         <!-- overlay -->
+   <!-- <div class="absolute background-image:url('../assets/main-slider/1.jpg'); z-10 "></div> -->
+
+  <!-- Hero Content -->
+  <div class="relative  max-w-6xl mx-auto py-4 text-white">
+    
+    <h1 class="text-5xl font-bold leading-tight mt-0">
+      200 Mbps Super<br>
+      <span class="text-white">Fast Broadband</span>
+    </h1>
+    <p class="mt-5 text-gray-200 max-w-xl leading-relaxed">
+      We strongly support best practice sharing across our<br>
+      operations around the world and across various
+    </p>
+    <button class="mt-6 bg-red-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-red-700 transition-all">
+      Get Connection Now →
+    </button>
+  </div>
+
+  <!-- Bottom Cards Section -->
+  <div class="absolute bottom-[-80px] mt-11 left-0 w-full flex justify-center gap-6">
+    <!-- Card 1 -->
+    <div class="relative w-80 h-56 bg-cover bg-center rounded-lg overflow-hidden group shadow-lg" style="background-image: url('../assets/resource/service-1.jpg');">
+      <div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-all"></div>
+      <div class="absolute -top-5 -right-2
+               bg-white rounded-b-full p-6">
+        <i class="bi bi-house-door text-red-600 text-2xl group-hover:text-yellow-400 transition-colors"></i>
+      </div>
+      <div class="absolute bottom-4 left-4 text-white">
+        <h2 class="text-lg font-semibold mb-2">Home Broadband Internet</h2>
+        <div class="flex flex-col gap-1 text-sm">
+          <p><i class="bi bi-check-circle-fill text-red-500 mr-1"></i> High Speed Internet</p>
+          <p><i class="bi bi-headset text-red-500 mr-1"></i> 24/7 Support</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="relative w-80 h-56 bg-cover bg-center rounded-lg overflow-hidden group shadow-lg" style="background-image: url('../assets/resource/service-2.jpg');">
+      <div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-all"></div>
+      <div class="absolute -top-5 -right-2 bg-white rounded-b-full p-6">
+        <i class="bi bi-building text-red-600 text-2xl group-hover:text-yellow-400 transition-colors"></i>
+      </div>
+      <div class="absolute bottom-4 left-4 text-white">
+        <h2 class="text-lg font-semibold mb-2">Corporate / SME Internet</h2>
+        <div class="flex flex-col gap-1 text-sm">
+          <p><i class="bi bi-check-circle-fill text-red-500 mr-1"></i> High Speed Internet</p>
+          <p><i class="bi bi-headset text-red-500 mr-1"></i> 24/7 Support</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="relative w-80 h-56 bg-cover bg-center rounded-lg overflow-hidden group shadow-lg" style="background-image: url('../assets/resource/service-3.jpg');">
+      <div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-all"></div>
+      <div class="absolute -top-5 -right-2 bg-white rounded-b-full p-6">
+        <i class="bi bi-hdd-network text-red-600 text-2xl group-hover:text-yellow-400 transition-colors"></i>
+      </div>
+      <div class="absolute bottom-4 left-4 text-white">
+        <h2 class="text-lg font-semibold mb-2">Dedicated Server Internet</h2>
+        <div class="flex flex-col gap-1 text-sm">
+          <p><i class="bi bi-check-circle-fill text-red-500 mr-1"></i> High Speed Internet</p>
+          <p><i class="bi bi-headset text-red-500 mr-1"></i> 24/7 Support</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- hero section end  -->
+ <!-- emtpy div start for design  -->
+  <div class="w-full h-60 bg-color-[#F5F5F7]"></div>
+ <!-- emtpy div end for design  -->
+
+<!-- hero section two start  -->
+
+
+
+
+<section class="relative overflow-hidden  w-11/12 mx-auto">
+  
+
+<p class="text-center text-sm text-gray-600 py-2">
+  Subscribe StarNet TV Box & Get FREE Wi-Fi For 1 Month 
+  <span class="text-red-600 font-medium">From $89 month</span>
+</p>
+  
+  <div class="absolute top-0 right-0 bg-no-repeat bg-contain bg-right-top opacity-80 
+  bg-color-[#F5F5F7]pointer-events-none"
+       style="background-image: url('../assets/icons/dotted-map-2.png');">
+  </div>
+
+  <!--  Main Content -->
+  <div class="max-11/12 mx-auto flex items-center justify-between px-6 py-20 gap-10 relative z-10">
+
+    <!-- Left Image Section -->
+    <div class="relative w-1/2 flex justify-center items-center">
+      <div class="relative">
+        <img src="../assets/resource/about-1.png" alt="About Image" class="rounded-lg shadow-lg">
+      </div>
+
+      <!-- Red Circle Badge -->
+      <div class="absolute -bottom-3 -right-8 bg-red-600 text-white rounded-full w-28 h-28 flex flex-col items-center justify-center text-center">
+        <span class="text-xl font-bold">25k+</span>
+        <span class="text-sm leading-tight">Clients</span>
+      </div>
+    </div>
+
+    <!-- Right Text Section -->
+    <div class="w-1/2 space-y-6">
+      <p class="uppercase text-sm tracking-widest text-gray-500 font-semibold">
+        <span class="text-red-600">/</span> Who We Are
+      </p>
+
+      <h1 class="text-4xl font-bold leading-snug text-gray-900">
+        Providing live TV services <br> with fast internet
+      </h1>
+
+      <p class="text-gray-600">
+        Get connected with StarNet Limited that can provide your every technology need to connect the world.
+      </p>
+
+      <!-- Experience Box -->
+      <div class="flex items-start gap-4 bg-white shadow-sm border p-4 rounded-md">
+        <div class="bg-red-100 p-3 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5M12 6a6 6 0 11-6 6h6z" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-semibold text-gray-800">25+ Years of Experience</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            StarNet Internet is providing one of the fastest broadband internet and network solutions throughout Dhaka, reliable for all.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bullet Points -->
+      <ul class="space-y-2 text-gray-700">
+        <li class="flex items-center gap-2">
+          <i class="bi bi-check-circle-fill text-red-600"></i>
+          <span>StarNet Internet is providing one of the fastest internet</span>
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="bi bi-check-circle-fill text-red-600"></i>
+          <span>Reliable for both gamers and regular users.</span>
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="bi bi-check-circle-fill text-red-600"></i>
+          <span>Get a dedicated server hosted on your end.</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- hero section two end  -->
+
+<!-- who we are section start -->
+
+<section class="max-w-11/12 mx-auto py-4" >
+  <div class="">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <p class="text-sm font-semibold text-red-600 tracking-widest mb-4">/ WHY SELECT US /</p>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+        Why you use StarNet<br/>fibre internet
+      </h1>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Feature 1 -->
+      <div class="bg-gray-50 text-white rounded-xl p-8 flex flex-col items-center text-center hover:shadow-lg ">
+        <div class="w-16 h-16 flex items-center justify-center mb-4">
+          <i class="bi bi-wifi text-red-600 text-4xl"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-900">Fastest<br/>Broadband speeds</h3>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="bg-gray-50 rounded-xl p-8 flex flex-col items-center text-center hover:shadow-lg transition-all">
+        <div class="w-16 h-16 flex items-center justify-center mb-4">
+          <i class="bi bi-telephone text-red-600 text-4xl"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-900">We offer 24/7 call<br/>service</h3>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="bg-gray-50 rounded-xl p-8 flex flex-col items-center text-center hover:shadow-lg transition-all">
+        <div class="w-16 h-16 flex items-center justify-center mb-4">
+          <i class="bi bi-globe text-red-600 text-4xl"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-900">Fiber optic<br/>connection</h3>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="bg-gray-50 rounded-xl p-8 flex flex-col items-center text-center hover:shadow-lg transition-all">
+        <div class="w-16 h-16 flex items-center justify-center mb-4">
+          <i class="bi bi-shield-check text-red-600 text-4xl"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-900">98%+ Uptime<br/>guaranteed</h3>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="bg-gray-50 rounded-xl p-8 flex flex-col items-center text-center hover:shadow-lg transition-all">
+        <div class="w-16 h-16 flex items-center justify-center mb-4">
+          <i class="bi bi-speedometer text-red-600 text-4xl"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-900">Advance<br/>Monitoring</h3>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="bg-gray-50 rounded-xl p-8 flex flex-col items-center text-center hover:shadow-lg transition-all">
+        <div class="w-16 h-16 flex items-center justify-center mb-4">
+          <i class="bi bi-router text-red-600 text-4xl"></i>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-900">IPv6 supported<br/>dedicated</h3>
+      </div>
+
+      <!-- Feature 7 (Promo Card) -->
+      <div class="lg:col-span-2 rounded-xl overflow-hidden hover:shadow-2xl transition-all relative h-72 bg-cover bg-center"
+           style="background-image: url('../assets/resource/image-1.jpg');">
+
+        <!-- Overlay -->
+        <!-- <div class="absolute inset-0 bg-black/50"></div> -->
+
+        
+        <div class="relative z-10 flex flex-col justify-center items-center h-full p-8">
+          <h1 class="text-3xl md:text-4xl font-bold text-white mb-3">StarNet Home Wifi</h1>
+          <p class="text-white text-base mb-6">
+            Starting From <span class="line-through text-gray-300">$99.9</span>
+            <span class="text-red-500 font-bold">/Month</span>
+          </p>
+          <button class="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-5 rounded-lg transition-colors flex items-center gap-2">
+            Get Started Now <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- who we are section end  -->
+
+
+
+<!-- connected section start  -->
+<section class="w-11/12 mx-auto bg-gray-50  min-h-44 ">
+  <div class="  bg-white rounded-2xl shadow-md flex flex-col md:flex-row items-center overflow-hidden">
+   
+
+    <!-- LEFT: Image -->
+    <div class="md:w-1/2 w-full flex justify-center items-center relative p-6  ">
+      
+      <img 
+  src="/assets/main-slider/men.png" 
+  alt="Person with laptop"
+  class="w-full h-[250px] md:h-[280px] object-contain drop-shadow-lg"
+  style="height: 400px;"
+/>
+
+   
+      <img 
+        src="/assets/icons/badge.png" 
+        alt="Badge" 
+        class="absolute top-6 right-6 w-16 md:w-20"
+      >
+    </div>
+
+    <!-- RIGHT: Text Content -->
+    <div class="md:w-1/2 w-full  md:p-10 ">
+      <p class="text-red-600 uppercase tracking-wide font-semibold text-sm">
+        Get Connected Now
+      </p>
+
+      <h2 class="text-2xl md:text-4xl font-bold text-gray-900 leading-snug">
+        We are Best for Home Internet Service
+      </h2>
+
+      <p class="text-gray-700 align-center text-sm md:text-base leading-relaxed">
+        Explore our internet plans and select the one that suits your needs best.
+      </p>
+
+      <!-- Divider -->
+      <!-- <div class="border-t border-gray-200 my-4"></div> -->
+
+      <!-- Features -->
+      <div class="space-y-6 px-5 py-5">
+        <!-- Feature 1 -->
+        <div class="flex items-start gap-4">
+          <div class="bg-red-100 p-3 rounded-lg flex items-center justify-center shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+              class="h-6 w-6 text-red-600" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M3 7h18M3 12h18M3 17h18" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900">Dedicated Server</h3>
+            <p class="text-sm text-gray-700">
+              Reliable dedicated server options for your business.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="flex items-start gap-4">
+          <div class="bg-red-100 p-3 rounded-lg flex items-center justify-center shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+              class="h-6 w-6 text-red-600" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M11 11V3m0 0L7 7m4-4 4 4M21 21l-6-6M3 13l6 6" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900">Advanced Monitoring</h3>
+            <p class="text-sm text-gray-700">
+              Track performance and uptime with real-time monitoring tools.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- connected section end  -->
+
+
+<!-- Featured section start ************  -->
+     <section class="w-11/12 mx-auto gradient-bg header-bg relative ">
+<!--         
+        <div class="absolute transform -translate-x-1/2 w-full max-w-4xl  px-4">
+            <div class="bg-red-600 rounded-lg p-6 shadow-2xl border-2 border-red-700">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Get StarNet TV</h2>
+                    <p class="text-xl text-gray-200 mb-1">Server packages</p>
+                    <p class="text-lg text-gray-300">Featured shows & movies without buffering</p>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="container mx-auto mt-11"> 
+            <!-- Swiper Slider -->
+            <div class="swiper featuredSwiper max-w-6xl mx-auto">
+                <div class="swiper-wrapper pb-10">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+  <div class="relative rounded-xl overflow-hidden shadow-lg border border-slate-700 h-80">
+
+  
+    <div 
+      class="absolute inset-0 bg-cover bg-center w-10/12"
+      style="background-image: url('../assets/resource/movie-1.jpg');">
+    </div>
+
+  
+    <div class="absolute inset-0 bg-black/50"></div>
+
+   
+    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+      <h1 class="text-2xl font-bold mb-2">Premium Action</h1>
+      <div class="flex items-center justify-between text-sm">
+        <span class="text-gray-300">2024</span>
+        <div class="flex items-center space-x-1">
+          <i class="bi bi-star-fill text-yellow-600"></i>
+          <span>7.9</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+  <div class="relative rounded-xl overflow-hidden shadow-lg border border-slate-700 h-80">
+
+    
+    <div 
+      class="absolute inset-0 bg-cover bg-center"
+      style="background-image: url('../assets/resource/movie-2.jpg');">
+    </div>
+
+   
+    <div class="absolute inset-0 bg-black/50"></div>
+
+  
+    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+      <h1 class="text-2xl font-bold mb-2">Premium Action</h1>
+      <div class="flex items-center justify-between text-sm">
+        <span class="text-gray-300">2024</span>
+        <div class="flex items-center space-x-1">
+          <i class="bi bi-star-fill text-yellow-600"></i>
+          <span>7.9</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+  <div class="relative rounded-xl overflow-hidden shadow-lg border border-slate-700 h-80">
+
+    
+    <div 
+      class="absolute inset-0 bg-cover bg-center"
+      style="background-image: url('../assets/resource/movie-3.jpg');">
+    </div>
+    
+    <div class="absolute inset-0 bg-black/50"></div>
+
+  
+    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+      <h1 class="text-2xl font-bold mb-2">Premium Action</h1>
+      <div class="flex items-center justify-between text-sm">
+        <span class="text-gray-300">2024</span>
+        <div class="flex items-center space-x-1">
+          <i class="bi bi-star-fill text-yellow-600"></i>
+          <span>7.9</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+                    
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+  <div class="relative rounded-xl overflow-hidden shadow-lg border border-slate-700 h-80">
+
+    <div 
+      class="absolute inset-0 bg-cover bg-center"
+      style="background-image: url('../assets/resource/movie-4.jpg');">
+    </div>
+
+    
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    
+    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+      <h1 class="text-2xl font-bold mb-2">Premium Action</h1>
+      <div class="flex items-center justify-between text-sm">
+        <span class="text-gray-300">2024</span>
+        <div class="flex items-center space-x-1">
+          <i class="bi bi-star-fill text-yellow-600"></i>
+          <span>7.9</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+  <div class="relative rounded-xl overflow-hidden shadow-lg border border-slate-700 h-80">
+
+    
+    <div 
+      class="absolute inset-0 bg-cover bg-center"
+      style="background-image: url('../assets/resource/movie-5.jpg');">
+    </div>
+
+   
+    <div class="absolute inset-0 bg-black/50"></div>
+
+   
+    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+      <h1 class="text-2xl font-bold mb-2">Premium Action</h1>
+      <div class="flex items-center justify-between text-sm">
+        <span class="text-gray-300">2024</span>
+        <div class="flex items-center space-x-1">
+          <i class="bi bi-star-fill text-yellow-600"></i>
+          <span>7.9</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide">
+  <div class="relative rounded-xl overflow-hidden shadow-lg border border-slate-700 h-80">
+
+
+    <div 
+      class="absolute inset-0 bg-cover bg-center"
+      style="background-image: url('../assets/resource/movie-6.jpg');">
+    </div>
+
+ 
+    <div class="absolute inset-0 bg-black/50"></div>
+
+   
+    <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
+      <h1 class="text-2xl font-bold mb-2">Premium Action</h1>
+      <div class="flex items-center justify-between text-sm">
+        <span class="text-gray-300">2024</span>
+        <div class="flex items-center space-x-1">
+          <i class="bi bi-star-fill text-yellow-600"></i>
+          <span>7.9</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+                
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next text-white bg-black/30 hover:bg-black/50 rounded-full w-12 h-12"></div>
+                <div class="swiper-button-prev text-white bg-black/30 hover:bg-black/50 rounded-full w-12 h-12"></div>
+                
+                <!-- Pagination -->
+                <div class="swiper-pagination mt-8"></div>
+            </div>
+        </div>
+
+     
+<section class="bg-white w-4/5 h-[30vh] mx-auto my-10 rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between px-6 md:px-10">
+  
+  <!-- LEFT SIDE -->
+  <div class="flex items-center gap-4">
+   
+    <div class="bg-red-600 text-white p-4 rounded-full">
+      <i class="bi bi-wifi text-3xl"></i>
+    </div>
+    
+
+    <div>
+      <p class="text-gray-700 text-lg font-semibold">Call us Now for Coverage Area</p>
+      <p class="text-2xl font-bold text-black">0123456789</p>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="mt-6 md:mt-0">
+    <img 
+      src="../assets/icons/dotted-map.png" 
+      alt="Coverage Image" 
+      class="w-56 md:w-[600px] rounded-lg object-cover shadow mt-2"
+    />
+  </div>
+
+</section>
+   
+
+      
+
+    </section>
+
+<!-- Featured section end ************** -->
+
+
+
+<!-- Watch section start  -->
+<section class="flex flex-col md:flex-row w-11/12 mx-auto ">
+  <!-- Left Div -->
+  <div class="md:w-1/2 w-full bg-red-600 flex items-center justify-center p-8">
+    <div class="text-white text-center max-w-md">
+      <h1 class="text-4xl font-bold leading-tight mb-4">
+        Watch more than<br>
+        <span class="text-yellow-400">250+ channels</span>
+      </h1>
+
+      <p class="text-base mb-6 leading-relaxed">
+        Explore our internet and TV plans to find the one that fits your lifestyle the best. 
+        Stream and enjoy unlimited entertainment.
+      </p>
+
+      <button class="bg-black text-white px-6 py-3 rounded-lg font-semibold text-base inline-flex items-center gap-2 hover:bg-yellow-400 hover:text-black transition-all duration-300">
+        AI Shared List
+      </button>
+    </div>
+  </div>
+
+  <!-- Right Div -->
+  <div class="md:w-1/2 w-full flex flex-col items-center justify-center bg-gray-100 p-6 gap-6">
+    <!-- Row 1 -->
+    <div class="flex justify-center gap-5 w-full max-w-lg">
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center w-1/3">
+        <img src="../assets/resource/channel-1.png" alt="HBO" class="w-14 h-14 object-contain mb-2">
+        <span class="text-sm font-medium text-gray-700">HBO Max</span>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center w-1/3">
+        <img src="../assets/resource/channel-2.png" alt="Netflix" class="w-14 h-14 object-contain mb-2">
+        <span class="text-sm font-medium text-gray-700">Netflix</span>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center w-1/3">
+        <img src="../assets/resource/channel-3.png" alt="Apple TV+" class="w-14 h-14 object-contain mb-2">
+        <span class="text-sm font-medium text-gray-700">Apple TV+</span>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="flex justify-center gap-5 w-full max-w-lg">
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center w-1/3">
+        <img src="../assets/resource/channel-4.png" alt="Prime" class="w-14 h-14 object-contain mb-2">
+        <span class="text-sm font-medium text-gray-700">Prime Video</span>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center w-1/3">
+        <img src="../assets/resource/channel-5.png" alt="Disney+" class="w-14 h-14 object-contain mb-2">
+        <span class="text-sm font-medium text-gray-700">Disney+</span>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center w-1/3">
+        <img src="../assets/resource/channel-6.png" alt="Hulu" class="w-14 h-14 object-contain mb-2">
+        <span class="text-sm font-medium text-gray-700">Hulu</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Watch section end  -->
+
+
+
+<!-- value section start  -->
+ <!-- <section class="py-16 bg-gray-50"> -->
+  <section class="py-16 bg-cover bg-center bg-no-repeat" style="background-image: url('../assets/icons/pattern-6.jpg');">
+
+
+  <div class="text-center mb-12">
+    <p class="text-red-500 tracking-wide font-medium">/ OUR PACKAGES /</p>
+    <h2 class="text-3xl font-bold text-gray-800">Best value added packages</h2>
+  </div>
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-4">
+    <!-- Card 1 -->
+    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-500 group">
+      <div class="relative overflow-hidden">
+        <img src="../assets/background/1.jpg" alt="Bronze" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute top-3 left-3 bg-orange-400 text-white text-sm font-bold px-3 py-1 rounded">
+          140<br><span class="font-normal text-xs">MBPS Speed</span>
+        </div>
+      </div>
+
+      <div class="p-6">
+        <div class="flex items-center gap-2 text-red-600 mb-2">
+          <i class="bi bi-wifi text-xl transition-colors duration-300 group-hover:text-red-600"></i>
+          <span class="uppercase text-xs font-semibold tracking-wide">Internet</span>
+        </div>
+
+        <h3 class="font-bold text-lg mb-4">Bronze Package</h3>
+
+        <ul class="space-y-2 text-gray-600 mb-6">
+          <li><i class="bi bi-check text-green-500 mr-2"></i>4K Youtube and Facebook Stream.</li>
+          <li><i class="bi bi-check text-green-500 mr-2"></i>Optical Fiber Connection</li>
+          <li><i class="bi bi-check text-green-500 mr-2"></i>IPv6 Public IP Only</li>
+          <li><i class="bi bi-check text-green-500 mr-2"></i>24/7 Phone and Online Support</li>
+        </ul>
+
+        <p class="text-2xl font-bold mb-4">$29.<span class="text-sm font-normal">00 /Month</span></p>
+
+        <button class="border border-gray-300 px-5 py-2 text-sm rounded transition-all duration-500 group-hover:bg-red-600 group-hover:text-white">
+          Get Started Now →
+        </button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-500 group">
+      <div class="relative overflow-hidden">
+        <img src="../assets/background/2.jpg" alt="Silver" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute top-3 left-3 bg-red-500 text-white text-sm font-bold px-3 py-1 rounded">
+          240<br><span class="font-normal text-xs">MBPS Speed</span>
+        </div>
+      </div>
+
+      <div class="p-6">
+        <div class="flex items-center gap-2 text-red-600 mb-2">
+          <i class="bi bi-wifi text-xl transition-colors duration-300 group-hover:text-red-600"></i>
+          <i class="bi bi-tv text-xl transition-colors duration-300 group-hover:text-red-600"></i>
+          <span class="uppercase text-xs font-semibold tracking-wide">Internet + TV</span>
+        </div>
+
+        <h3 class="font-bold text-lg mb-4">Silver Package</h3>
+
+        <ul class="space-y-2 text-gray-600 mb-6">
+          <li><i class="bi bi-check text-green-500 mr-2"></i>4K Youtube and Facebook Stream.</li>
+          <li><i class="bi bi-check text-green-500 mr-2"></i>Optical Fiber Connection</li>
+          <li><i class="bi bi-check text-green-500 mr-2"></i>IPv6 Public IP Only</li>
+          <li><i class="bi bi-check text-green-500 mr-2"></i>24/7 Phone and Online Support</li>
+        </ul>
+
+        <p class="text-2xl font-bold mb-4">$49.<span class="text-sm font-normal">00 /Month</span></p>
+
+        <button class="border border-gray-300 px-5 py-2 text-sm rounded transition-all duration-500 group-hover:bg-red-600 group-hover:text-white">
+          Get Started Now →
+        </button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-500 group">
+      <div class="relative overflow-hidden">
+        <img src="../assets/background/3.jpg" alt="Gold" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute top-3 left-3 bg-black text-white text-sm font-bold px-3 py-1 rounded">
+          340<br><span class="font-normal text-xs">MBPS Speed</span>
+        </div>
+      </div>
+
+      <div class="p-6">
+        <div class="flex items-center gap-2 text-red-600 mb-2">
+          <i class="bi bi-wifi text-xl transition-colors duration-300 group-hover:text-red-600"></i>
+          <i class="bi bi-tv text-xl transition-colors duration-300 group-hover:text-red-600"></i>
+          <i class="bi bi-phone text-xl transition-colors duration-300 group-hover:text-red-600"></i>
+          <span class="uppercase text-xs font-semibold tracking-wide">Internet + TV + Mobile</span>
+        </div>
+
+        <h3 class="font-bold text-lg mb-4">Gold Package</h3>
+
+        <ul class="space-y-2 text-gray-600 mb-6">
+          <li><i class="bi bi-check text-green-500 mr-2"></i>4K Youtube and Facebook Stream.</li>
+          <li><i class="bi bi-check text-green-500 mr-2"></i>Optical Fiber Connection</li>
+          <li><i class="bi bi-check text-green-500 mr-2"></i>IPv6 Public IP Only</li>
+          <li><i class="bi bi-check text-green-500 mr-2"></i>24/7 Phone and Online Support</li>
+        </ul>
+
+        <p class="text-2xl font-bold mb-4">$69.<span class="text-sm font-normal">00 /Month</span></p>
+
+        <button class="border border-gray-300 px-5 py-2 text-sm rounded transition-all duration-500 group-hover:bg-red-600 group-hover:text-white">
+          Get Started Now →
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- value section end  -->
+
+
+
+
+
+<!-- Testimonial section start -->
+
+<section class="relative bg-cover bg-center bg-no-repeat h-[1000px] section-bg">
+        <!-- Overlay -->
+        <!-- <div class="absolute inset-0 bg-black/5"> </div> -->
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center text-white py-16">
+            <!-- Section Header -->
+            <p class="text-sm tracking-widest text-white mb-2 uppercase">/TESTIMONIAL /</p>
+            <h1 class="text-[30px] md:text-[70px] font-bold leading-tight mb-12">
+            Why people love us <br> over others
+          </h1>
+
+            <!-- Swiper Container -->
+            <div class="swiper testimonialSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch">
+                            <!-- Card 1 -->
+                            <div class="card-container">
+                                <!-- Red Card (Top) -->
+                                <div class="red-card">
+                                    <div class="avatar">
+                      <img src="../assets/background/1.jpg" alt="Mark Wood" class="w-full h-full rounded-full object-cover">
+                       </div>
+                                    <h4 class="text-white text-sm font-semibold mt-2">Mark Wood</h4>
+                                    <p class="text-white/90 text-xs mt-1">CEO, Buzicon</p>
+                                    
+                                    <!-- Yellow Quote Badge -->
+                                    <div class="quote-badge">
+                                        <span class="text-black text-2xl font-bold">"</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- White Card (Bottom) -->
+                                <div class="white-card">
+                                    <h5 class="text-gray-900 font-semibold text-lg mb-2">Great Service</h5>
+                                    
+                                    <!-- Stars -->
+                                    <div class="mb-1 text-yellow-500 z-10">
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                    
+                                      </div>
+                                    
+                                    <p class="text-gray-600 text-sm leading-relaxed">
+                                        To get started with us, please go over all of our internet plans and other plans to let our operators know which one works for you
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 2 -->
+                            <div class="card-container">
+                                <!-- Red Card (Top) -->
+                                <div class="red-card">
+                                            <div class="avatar">
+                      <img src="../assets/background/1.jpg" alt="Mark Wood" class="w-full h-full rounded-full object-cover">
+                       </div>
+                                    <h4 class="text-white text-sm font-semibold mt-2">Mark Wood</h4>
+                                    <p class="text-white/90 text-xs mt-1">CEO, Buzicon</p>
+                                    
+                                    <!-- Yellow Quote Badge -->
+                                    <div class="quote-badge">
+                                        <span class="text-black text-2xl font-bold">"</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- White Card (Bottom) -->
+                                <div class="white-card">
+                                    <h5 class="text-gray-900 font-semibold text-lg mb-2">Great Service</h5>
+                                    
+                                    <!-- Stars -->
+                                     <div class="mb-3 text-yellow-400">
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      </div>
+                                    
+                                    <p class="text-gray-600 text-sm leading-relaxed">
+                                        To get started with us, please go over all of our internet plans and other plans to let our operators know which one works for you
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch">
+                            <!-- Card 3 -->
+                            <div class="card-container">
+                                <!-- Red Card (Top) -->
+                                <div class="red-card">
+                                          <div class="avatar">
+                      <img src="../assets/background/1.jpg" alt="Mark Wood" class="w-full h-full rounded-full object-cover">
+                       </div>
+                                    <h4 class="text-white text-sm font-semibold mt-2">Mark Wood</h4>
+                                    <p class="text-white/90 text-xs mt-1">CEO, Buzicon</p>
+                                    
+                                    <!-- Yellow Quote Badge -->
+                                    <div class="quote-badge">
+                                        <span class="text-black text-2xl font-bold">"</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- White Card (Bottom) -->
+                                <div class="white-card">
+                                    <h5 class="text-gray-900 font-semibold text-lg mb-2">Great Service</h5>
+                                    
+                                    <!-- Stars -->
+                                     <div class="mb-3 text-yellow-400">
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      </div>
+                                    
+                                    <p class="text-gray-600 text-sm leading-relaxed">
+                                        To get started with us, please go over all of our internet plans and other plans to let our operators know which one works for you
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="card-container">
+                              
+                                <div class="red-card">
+                                            <div class="avatar">
+                             <img src="../assets/background/1.jpg" alt="Mark Wood" class="w-full h-full rounded-full  object-cover">
+                              </div>
+                                    <h4 class="text-white text-sm font-semibold mt-2">Mark Wood</h4>
+                                    <p class="text-white/90 text-xs mt-1">CEO, Buzicon</p>
+                                    
+                             
+                                    <div class="quote-badge">
+                                        <span class="text-black text-2xl font-bold">"</span>
+                                    </div>
+                                </div>
+                                
+                        
+                                <div class="white-card">
+                                    <h5 class="text-gray-900 font-semibold text-lg mb-2">Great Service</h5>
+                                    
+                                    
+                                  <div class="mb-3 text-yellow-400">
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      </div>
+                                    
+                                    <p class="text-gray-600 text-sm leading-relaxed">
+                                        To get started with us, please go over all of our internet plans and other plans to let our operators know which one works for you
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="swiper-pagination mt-20 py-6"></div>
+            </div>
+        </div>
+    </section>
+
+
+  
+
+
+
+<!-- Testimonial section end -->
+
+
+
+
+
+<!-- blog section start  -->
+ <section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+   
+    <div class="flex justify-between items-center mb-12">
+      <div>
+        <p class="text-sm uppercase tracking-wider text-red-500 font-semibold mb-2">Latest Blog</p>
+        <h2 class="text-4xl font-bold text-gray-900 leading-tight">
+          insight From the <br> latest news & blog
+        </h2>
+      </div>
+      <button class="bg-red-500 text-white px-5 py-2 rounded-md font-medium hover:bg-red-600 transition">
+        All Latest Blog →
+      </button>
+    </div>
+
+    <!-- Blog Cards -->
+    <div class="grid md:grid-cols-3 gap-8">
+
+       
+<!-- Card1 -->
+    
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition max-w-sm">
+        
+        <div class="relative">
+            <img src="../assets/resource/news-1.jpg" alt="Blog 1" class="w-full h-60 object-cover rounded-t-lg">
+
+            <!-- Date Box (positioned on image top-left) -->
+            <div class="absolute bottom-0 left-4 flex items-stretch z-20">
+                
+                <div class="bg-red-500 text-white text-center px-3 py-2  flex items-center justify-center">
+                    <p class="text-lg font-bold leading-none m-0">25</p>
+                </div>
+
+                
+                <div class="bg-black text-white text-center px-4 py-2  flex items-center justify-center">
+                    <p class="text-xs font-medium m-0">March, 2023</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Content -->
+        <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 gap-4 mb-3">
+                <span class="flex items-center gap-1">
+                    <i class="bi bi-person-fill text-red-500"></i>
+                    <span>Admin</span>
+                </span>
+                <span class="flex items-center gap-1">
+                    <i class="bi bi-chat-dots text-red-500"></i>
+                    <span>0 Comments</span>
+                </span>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                Providing live TV services with fast internet
+            </h3>
+
+            <a href="#" class="text-red-500 font-medium flex items-center gap-2 hover:underline">
+                Read Full Article <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+      
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition max-w-sm">
+        
+        <div class="relative">
+            <img src="../assets/resource/news-2.jpg" alt="Blog 1" class="w-full h-60 object-cover rounded-t-lg">
+
+            
+            <div class="absolute bottom-0 left-4 flex items-stretch z-20">
+                
+                <div class="bg-red-500 text-white text-center px-3 py-2  flex items-center justify-center">
+                    <p class="text-lg font-bold leading-none m-0">25</p>
+                </div>
+
+                
+                <div class="bg-black text-white text-center px-4 py-2  flex items-center justify-center">
+                    <p class="text-xs font-medium m-0">March, 2023</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 gap-4 mb-3">
+                <span class="flex items-center gap-1">
+                    <i class="bi bi-person-fill text-red-500"></i>
+                    <span>Admin</span>
+                </span>
+                <span class="flex items-center gap-1">
+                    <i class="bi bi-chat-dots text-red-500"></i>
+                    <span>0 Comments</span>
+                </span>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                Providing live TV services with fast internet
+            </h3>
+
+            <a href="#" class="text-red-500 font-medium flex items-center gap-2 hover:underline">
+                Read Full Article <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+
+
+
+      <!-- Card3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition max-w-sm">
+        
+        <div class="relative">
+            <img src="../assets/resource/news-3.jpg" alt="Blog 1" class="w-full h-60 object-cover rounded-t-lg">
+
+            
+            <div class="absolute bottom-0 left-4 flex items-stretch z-20">
+                
+                <div class="bg-red-500 text-white text-center px-3 py-2  flex items-center justify-center">
+                    <p class="text-lg font-bold leading-none m-0">25</p>
+                </div>
+
+                
+                <div class="bg-black text-white text-center px-4 py-2  flex items-center justify-center">
+                    <p class="text-xs font-medium m-0">March, 2023</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 gap-4 mb-3">
+                <span class="flex items-center gap-1">
+                    <i class="bi bi-person-fill text-red-500"></i>
+                    <span>Admin</span>
+                </span>
+                <span class="flex items-center gap-1">
+                    <i class="bi bi-chat-dots text-red-500"></i>
+                    <span>0 Comments</span>
+                </span>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                Providing live TV services with fast internet
+            </h3>
+
+            <a href="#" class="text-red-500 font-medium flex items-center gap-2 hover:underline">
+                Read Full Article <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+
+
+</section>
+
+
+
+<!-- blog section end  -->
+
+<!-- scroll to top start  -->
+<button id="scrollToTopBtn"
+  class="bg-red-600 hover:bg-black text-white p-3 rounded-full shadow-lg transition-colors duration-200 z-10"
+  aria-label="Scroll to top"
+  style="position:fixed; bottom:24px; right:24px; display:none; opacity:0; transform: translateY(12px); transition: opacity 250ms ease, transform 250ms ease,  background-color 150ms ;">
+  <i class="bi bi-arrow-up text-xl"></i>
+</button>
+<!-- scroll to top end  -->
+
+
+
+<!-- footer section start  -->
+ <footer class="bg-[#0d0d10] text-gray-300">
+  
+  <div class="border-b border-gray-700 flex flex-col md:flex-row justify-between items-center px-6 md:px-16 py-6 gap-4">
+    <div class="flex items-center gap-4">
+      <img src="../assets/logo.png" alt="StarNet Logo" class="w-44" />
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-6">
+    
+      <div class="flex items-center gap-3 bg-[#0d0d10] px-4 py-3 rounded-lg">
+
+  <div class="bg-red-600 p-3 rounded-md flex items-center justify-center">
+        <i class="bi bi-telephone-fill"></i>
+  </div>
+
+ 
+  <div>
+    <p class="text-sm text-gray-300">Call Us On</p>
+    <p class="font-semibold text-white">+880 451 484 445</p>
+  </div>
+</div>
+
+
+      <div class="flex items-center gap-3 bg-[#0d0d10] px-4 py-3 rounded-lg">
+  
+  <div class="bg-red-600 p-3 rounded-md flex items-center justify-center">
+    <i class="bi bi-envelope-fill text-white text-xl"></i>
+  </div>
+
+  
+  <div>
+    <p class="text-sm text-gray-300">Mail to Us</p>
+    <p class="font-semibold text-white">StarNet@support.com</p>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Main Footer -->
+  <div class="px-6 md:px-16 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 relative">
+    
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-3">About Us</h3>
+      <p class="text-gray-400 text-sm leading-relaxed mb-4">
+        To get started with us, please go over all of our internet plans and other plans to let our operators.
+      </p>
+      <div class="flex gap-3">
+        <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 hover:bg-red-600 rounded-full">
+          
+           <i class="bi bi-facebook"></i>
+        </a>
+        <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 hover:bg-red-600 rounded-full">
+          
+           <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 hover:bg-red-600 rounded-full">
+          
+           <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-3">Useful Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-red-500 transition">› About Us</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">› Our Services</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">› Our Clients</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">› Testimonial</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">› News & Media</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-3">Services</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-red-500 transition">› Home Internet</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">› Corporate Net</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">› SKE Internet</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">› Web Hosting</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">› GPS Tracker</a></li>
+      </ul>
+    </div>
+
+   
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-3">Newsletter</h3>
+      <p class="text-gray-400 text-sm mb-4">Sign up for alerts, our latest blogs, thoughts, and insights.</p>
+      <div class="flex">
+        <input type="email" placeholder="Your Email"
+               class="w-full px-3 py-2 text-gray-900 rounded-l-md focus:outline-none" />
+        <button class="bg-red-600 hover:bg-red-700 px-4 rounded-r-md text-white">
+          
+           <i class="bi bi-send-fill"></i>
+          
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="border-t border-gray-700 py-4 text-center text-sm text-gray-500">
+    © Copyrights reserved by <span class="text-red-500">Rafusoft</span>
+  </div>
+
+</footer>
+
+
+
+
+
+
+<!-- footer section end  -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".testimonialSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+            },
+        });
+    </script>
+
+    
+   <!-- scroll to top start  -->
+
+   <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.getElementById('scrollToTopBtn');
+
+    
+    function toggleScrollBtn() {
+      if (window.scrollY > 200) {
+      
+        btn.style.display = 'block';            
+        
+        requestAnimationFrame(() => {
+          btn.style.opacity = '1';
+          btn.style.transform = 'translateY(0)';
+          btn.style.pointerEvents = 'auto';
+        });
+      } else {
+     
+        btn.style.opacity = '0';
+        btn.style.transform = 'translateY(12px)';
+        btn.style.pointerEvents = 'none';
+       
+        setTimeout(() => {
+          if (btn.style.opacity === '0') btn.style.display = 'none';
+        }, 260); 
+      }
+    }
+
+    
+    toggleScrollBtn();
+
+    
+    window.addEventListener('scroll', toggleScrollBtn, { passive: true });
+
+    
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
+
+   <!-- scroll to top end  -->
+
+    <!-- feature section js start -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+       
+        var swiper = new Swiper(".featuredSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+    <!-- feature section js end -->
+</body>
+</html>
+
+
+</body>
+</html>
