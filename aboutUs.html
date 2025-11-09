@@ -14,6 +14,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+     <!-- animation cdn  -->
+      <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <!-- feature section link end  -->
 
@@ -106,7 +109,7 @@
   <a href="index.html">
     <img 
       src="../assets/ditrixitlogo.png" 
-      alt="StarNet company logo" 
+      alt="DitrixitHub company logo" 
       class="h-16 object-contain cursor-pointer"
     >
   </a>
@@ -392,94 +395,74 @@
 
 
 
-<!-- who we are section start -->
+<!-- About company section start -->
  
-<section class="w-11/12 mx-auto py-16 grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
+<section class="bg-white w-full max-w-6xl mx-auto py-16 px-4 lg:px-10 grid grid-cols-1 lg:grid-cols-2 items-center gap-10 overflow-x-hidden">
+  
   <!-- LEFT SIDE IMAGES -->
-  <div class="relative">
+  <div class="relative w-full flex justify-center lg:justify-start">
     <!-- Main Image -->
-    <img src="../assets/resource/about-3.jpg" alt="Family using internet" class="rounded-lg object-cover w-[400px] ml-5">
+    <img src="../assets/resource/about-3.jpg" alt="Family using internet" class="rounded-lg object-cover w-full max-w-sm sm:max-w-md lg:max-w-lg">
 
     <!-- Red Label -->
-    <div class="absolute top-8 left-5 bg-red-600 text-white px-6 py-4 rounded-md shadow-lg flex items-center gap-3">
-      <i class="bi bi-wifi text-2xl"></i>
+    <div class="absolute top-6 left-6 bg-red-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-md shadow-lg flex items-center gap-3 text-sm sm:text-base">
+      <i class="bi bi-wifi text-xl sm:text-2xl"></i>
       <div>
         <p class="font-semibold leading-tight">Experience<br>Best Internet</p>
       </div>
     </div>
 
-  
-    <div class="absolute bottom-[7rem]  left-[23rem] border-8 border-white rounded-lg shadow-lg">
-      <img src="../assets/resource/about-4.jpg" alt="People watching TV" class="rounded-lg object-cover">
+    <!-- Overlapping Image -->
+    <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 lg:left-auto lg:right-6 w-24 sm:w-32 md:w-40">
+      <img src="../assets/resource/about-4.jpg" alt="People watching TV" class="rounded-lg object-cover w-full h-auto shadow-lg">
     </div>
   </div>
 
-  
+  <!-- RIGHT SIDE CONTENT -->
   <div class="space-y-6">
-    <p class="text-gray-500 uppercase tracking-wider font-semibold flex items-center gap-2">
-      <span class="w-1.5 h-6 bg-red-600 inline-block ml-6"></span> Who We Are
+    <p class="text-gray-500 uppercase tracking-wider font-semibold flex items-center gap-2 text-sm sm:text-base">
+      <span class="w-1.5 h-6 bg-red-600 inline-block"></span>About Company
     </p>
 
-    <h2 class="text-4xl font-bold leading-tight  ml-2">
-      We don’t just build software,  <br>
+    <h2 class="text-3xl sm:text-4xl lg:text-4xl font-bold leading-tight break-words">
+      We don’t just build software,<br>
       <span class="text-black">We build relationships</span>
     </h2>
 
-    <!-- <div class="flex items-start gap-3">
-      <div class="text-red-600 text-2xl">
-        <i class="bi bi-router-fill"></i>
+    <div class="px-0 sm:px-0 md:px-0">
+      <div class="flex items-start gap-3">
+        <!-- Icon -->
+        <div class="text-red-600 text-2xl flex-shrink-0">
+          <i class="bi bi-router-fill"></i>
+        </div>
+
+        <!-- Text -->
+        <p class="text-gray-700 leading-relaxed text-sm sm:text-base md:text-lg text-justify break-words">
+          Get connected with <span class="text-orange-500 font-semibold">DTRIX IT Hub</span> that can provide your every technology need to connect the world.
+        </p>
       </div>
-      <p class="text-gray-700 leading-relaxed">
-        Get connected with <span class="text-orange-500 font-semibold">DTRIX ITHUB</span> that can provide
-        your every technology need to connect the world.
-      </p>
-    </div> -->
-
-    <!-- <p class="text-gray-600 leading-relaxed">
-       DTRIX ITHU leading IT solutions company committed to helping businesses and organizations 
-achieve digital transformation through innovative, reliable, and result-driven technology solutions.
- With a team of skilled developers, designers, and IT experts, we specialize in delivering custom software, 
-responsive websites, mobile apps, payment integration, and complete IT infrastructure solutions. Whether 
-you are a startup, SME, or enterprise, we provide the tools and expertise to simplify operations, boost 
-productivity, and accelerate growth
-    </p> -->
-
-
-    <div class="px-6 sm:px-6 md:px-8">
-  <div class="flex items-start gap-3">
-    <!-- Icon placeholder -->
-    <div class="text-red-600 text-2xl flex-shrink-0">
-      <i class="bi bi-router-fill"></i>
     </div>
 
-    <!-- Text -->
-    <p class="text-gray-700 leading-relaxed text-base md:text-lg text-justify">
-      Get connected with <span class="text-orange-500 font-semibold">DTRIX IT Hub</span> that can provide
-      your every technology need to connect the world.
-    </p>
-  </div>
-</div>
+    <div class="px-0 sm:px-0 md:px-0">
+      <p class="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg text-justify break-words">
+        DTRIX IT Hub, a leading IT solutions company, is committed to helping businesses and organizations 
+        achieve digital transformation through innovative, reliable, and result-driven technology solutions.
+        With a team of skilled developers, designers, and IT experts, we specialize in delivering custom software, 
+        responsive websites, mobile apps, payment integration, and complete IT infrastructure solutions. Whether 
+        you are a startup, SME, or enterprise, we provide the tools and expertise to simplify operations, boost 
+        productivity, and accelerate growth.
+      </p>
+    </div>
 
-
-     <div class="px-4 sm:px-6 md:px-8">
-  <p class="text-gray-600 leading-relaxed text-base md:text-lg text-justify">
-    DTRIX IT Hub, a leading IT solutions company, is committed to helping businesses and organizations 
-    achieve digital transformation through innovative, reliable, and result-driven technology solutions.
-    With a team of skilled developers, designers, and IT experts, we specialize in delivering custom software, 
-    responsive websites, mobile apps, payment integration, and complete IT infrastructure solutions. Whether 
-    you are a startup, SME, or enterprise, we provide the tools and expertise to simplify operations, boost 
-    productivity, and accelerate growth.
-  </p>
-</div>
-
-
-    <button class="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow-md transition-all duration-300">
+    <button class="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow-md transition-all duration-300 text-sm sm:text-base">
       Get Started Now <i class="bi bi-arrow-right ml-2"></i>
     </button>
   </div>
+
 </section>
 
-<!-- who we are section  end -->
+
+<!-- About company  section  end -->
 
 
 <!-- Mission & Vision Section Start -->
@@ -768,17 +751,28 @@ productivity, and accelerate growth
       </div>
 
       <!-- Bottom White Info Box -->
-     <section class="bg-white w-4/5 h-[30vh] mx-auto my-10 rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between px-6 md:px-10"> 
-      <!-- LEFT SIDE --> 
-       <div class="flex items-center gap-4">
-         <div class="bg-red-600 text-white p-4 rounded-full"> <i class="bi bi-wifi text-3xl"></i> </div>
-          <div>
-             <p class="text-gray-700 text-lg font-semibold">Call us Now for Coverage Area</p>
-              <p class="text-2xl font-bold text-black">0123456789</p>
-             </div> 
-            </div> <!-- RIGHT SIDE -->
-             <div class="mt-6 md:mt-0"> <img src="../assets/icons/dotted-map.png" alt="Coverage Image" class="w-56 md:w-[600px] rounded-lg object-cover shadow mt-2" /> </div>
-             </section>
+<section class="bg-white w-full max-w-4xl mx-auto my-10 rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 lg:px-10 py-6 gap-6">
+  
+  <!-- LEFT SIDE -->
+  <div class="flex items-center gap-4 flex-1 min-w-0">
+    <div class="bg-red-600 text-white p-4 rounded-full flex-shrink-0">
+      <i class="bi bi-wifi text-2xl"></i>
+    </div>
+    <div class="min-w-0">
+      <p class="text-gray-700 text-lg font-semibold truncate">Call us Now </p>
+      <p class="text-2xl font-bold text-black truncate">+8801730974804</p>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="flex-shrink-0 w-full md:w-1/2">
+    <img src="../assets/icons/dotted-map.png" alt="Coverage Image" class="w-full h-auto max-w-full rounded-lg object-cover shadow" />
+  </div>
+
+</section>
+
+
+
     </section>
 
 <!-- feature  section  end   -->
@@ -796,18 +790,18 @@ productivity, and accelerate growth
       <span class="w-1.5 h-6 bg-red-600 inline-block"></span> Why Select Us
     </p>
     <h2 class="text-4xl font-bold mt-3">
-      Why you use <span class="text-black">StarNet</span> fibre internet
-    </h2>
+    Why Businesses Trust <span class="text-black">DitrixitHub</span> for Innovation
+   </h2>
   </div>
 
   <!-- MAIN GRID -->
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 items-stretch">
     <!-- LEFT CARD -->
     <div class="relative rounded-lg overflow-hidden shadow-md">
-      <img src="../assets/background/10.jpg" alt="StarNet Home Wifi" class="w-full h-full object-cover">
+      <img src="../assets/background/10.jpg" alt="DitrixitHub Home Wifi" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-black bg-opacity-40"></div>
       <div class="absolute top-0 left-0 p-8 text-white flex flex-col justify-center h-full">
-        <h3 class="text-2xl font-bold mb-3">StarNet Home Wifi</h3>
+        <h3 class="text-2xl font-bold mb-3">DitrixitHub packages</h3>
         <p class="text-lg mb-2">Starting From</p>
         <p class="text-2xl font-bold text-yellow-400">$49.9 <span class="text-base text-white">/ Month</span></p>
         <button class="bg-red-600 hover:bg-red-700 text-white font-semibold mt-6 px-6 py-3 rounded-md shadow-md transition-all duration-300">
@@ -821,35 +815,89 @@ productivity, and accelerate growth
       <!-- CARD 1 -->
       <div class="border rounded-lg p-8 hover:shadow-lg transition-all duration-300">
         <i class="bi bi-router-fill text-red-600 text-3xl mb-4"></i>
-        <h4 class="text-lg font-bold mb-2">Fastest Broadband speeds</h4>
-        <p class="text-gray-600 text-sm">StarNet Internet is providing one of the fastest broadband internet</p>
+        <h4 class="text-lg font-bold mb-2">Experienced Team</h4>
+        <p class="text-gray-600 text-sm">
+    Skilled professionals delivering excellence.
+    </p>
       </div>
 
       <!-- CARD 2 -->
       <div class="border rounded-lg p-8 hover:shadow-lg transition-all duration-300">
         <i class="bi bi-telephone-fill text-red-600 text-3xl mb-4"></i>
-        <h4 class="text-lg font-bold mb-2">24/7 Hotline service</h4>
-        <p class="text-gray-600 text-sm">StarNet Internet is providing one of the fastest broadband internet</p>
+        <h4 class="text-lg font-bold mb-2">Tailor-Made Solutions</h4>
+       <p class="text-gray-600 text-sm">
+      Software customized to your business model
+    </p>
       </div>
 
       <!-- CARD 3 -->
       <div class="border rounded-lg p-8 hover:shadow-lg transition-all duration-300">
         <i class="bi bi-headset text-red-600 text-3xl mb-4"></i>
-        <h4 class="text-lg font-bold mb-2">Advance Monitoring</h4>
-        <p class="text-gray-600 text-sm">StarNet Internet is providing one of the fastest broadband internet</p>
+        <h4 class="text-lg font-bold mb-2">End-to-End Services</h4>
+       <p class="text-gray-600 text-sm">
+ From planning to deployment and beyond
+</p>
       </div>
 
       <!-- CARD 4 -->
       <div class="border rounded-lg p-8 hover:shadow-lg transition-all duration-300">
         <i class="bi bi-lightning-charge-fill text-red-600 text-3xl mb-4"></i>
-        <h4 class="text-lg font-bold mb-2">98%+ Uptime guaranteed.</h4>
-        <p class="text-gray-600 text-sm">StarNet Internet is providing one of the fastest broadband internet</p>
+        <h4 class="text-lg font-bold mb-2">Cutting-Edge Technology</h4>
+           <p class="text-gray-600 text-sm">
+     Leveraging the latest tools and
+     frameworks.
+
+    </p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- why select us section end  -->
+
+
+ <!-- our client section start  -->
+  
+<section class="bg-gray-50 py-20 px-4">
+  <div class="max-w-5xl mx-auto text-center mb-12" data-aos="fade-down" data-aos-duration="1000">
+    <h2 class="text-3xl sm:text-4xl font-bold text-red-600 mb-4">
+      Our Clients
+    </h2>
+    <p class="text-gray-600 text-base sm:text-lg">
+      We work with a wide range of clients across industries:
+    </p>
+  </div>
+
+  <!-- Clients List -->
+  <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
+      <p class="text-gray-800 font-semibold text-lg text-center">Educational Institutions</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+      <p class="text-gray-800 font-semibold text-lg text-center">Corporate Businesses</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="300">
+      <p class="text-gray-800 font-semibold text-lg text-center">Garments & Manufacturing Units</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="400">
+      <p class="text-gray-800 font-semibold text-lg text-center">Retail & E-commerce Companies</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="500">
+      <p class="text-gray-800 font-semibold text-lg text-center">Event Management Firms</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="600">
+      <p class="text-gray-800 font-semibold text-lg text-center">Technology Startups</p>
+    </div>
+
+  </div>
+</section>
+ <!-- our client section  end   -->
 
 <!-- scroll to top start  -->
 <button id="scrollToTopBtn"
@@ -871,7 +919,7 @@ productivity, and accelerate growth
   
   <div class="border-b border-gray-700 flex flex-col md:flex-row justify-between items-center px-6 md:px-16 py-6 gap-4">
     <div class="flex items-center gap-4">
-      <img src="../assets/ditrixitlogo.png" alt="StarNet Logo" class="w-44" />
+      <img src="../assets/ditrixitlogo.png" alt="DitrixitHub Logo" class="w-44" />
     </div>
 
     <div class="flex flex-col sm:flex-row gap-6">
@@ -943,7 +991,7 @@ productivity, and accelerate growth
         <li><a href="servicedetails.html" class="hover:text-red-500 transition">› Our Services</a></li>
         <li><a href="#" class="hover:text-red-500 transition">› Case Study</a></li>
         <li><a href="teammembers.html" class="hover:text-red-500 transition">› Our Team</a></li>
-        <li><a href="#" class="hover:text-red-500 transition">› News & Media</a></li>
+        <li><a href="newsdetails.html" class="hover:text-red-500 transition">› News & Media</a></li>
       </ul>
     </div>
 
@@ -1131,6 +1179,14 @@ productivity, and accelerate growth
 </script>
 <!-- scroll to top end  -->
 
+ <!-- our client script start  -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true, // animations happen only once
+  });
+</script>
+ <!-- our client script  end   -->
 
 </body>
 </html>
